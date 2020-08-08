@@ -6,7 +6,36 @@ Working Title: "Night In App"
 ## User Story
 ​
 ```
-As a person living in the corona age, I want an app that will help me curate a date night while staying in.
+AS A person who can't or won't be going out for the night
+I WANT to see options for drink recipes, meal recipes and movies
+SO THAT I can curate aspects of a nice evening spent indoors
+```
+
+## Acceptance Criteria
+```
+GIVEN I am using the Night-In app to curate food, drink and entertainment for the evening
+WHEN I open the Night-In app
+THEN the start page is displayed
+WHEN I click the start button
+THEN I am presented with a list of ingredients options for what I want my DRINK to include
+WHEN I save my preference and click the generate button
+THEN One potential drink option will appear at a time
+WHEN I find the drink I want
+THEN I save my selection
+WHEN I move on to the next step
+THEN I am presented with a list of ingredients options for what I want my MEAL to include
+WHEN I save my preference and click the generate button
+THEN One potential meal option will appear at a time
+WHEN I find the meal I want
+THEN I save my selection
+WHEN I move on to the next step
+THEN I am presented with a list of Netflix genres for what I want my movie to be
+WHEN I save my genre preference and click the generate button
+THEN One potential movie option will appear at a time
+WHEN I find the movie I want
+THEN I save my selection
+WHEN I move on to the next step
+THEN three components of my Night-In selections are compiled and shown to me as a title, photo and link to find
 ```
 
 ## WIREFRAME
