@@ -10,9 +10,48 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
+
 <body>
-    <--! test -->
-    <p>TESTING</p> 
+    <div class="wrapper">
+
+        <div id="start-screen" class="start">
+          <h1>Night In</h1>
+          <p>
+            From Drinks to Dinner & a Movie… we’re happy to help you curate the perfect date Night In.
+          </p>
+          <button id="start">Start Quiz</button>
+        </div>
+  
+        <div id="drink-questions" class="hide">
+            <h2 id="drink-question-title">What type of cocktail would you like?</h2>
+            <div id="drink-choices" class="choices">
+                <ul><button id="Gin">Gin</button></ul>
+                <ul><button id="Vodka">Vodka</button></ul>
+                <ul><button id="Scotch">Scotch</button></ul>
+                <ul><button id="Tequila">Tequila</button></ul>
+                <ul><button id="Rum">Rum</button></ul>
+                <ul><button id="Bourbon">Bourbon</button></ul>
+                <ul><button id="Non-Alcoholic">Non-Alcoholic</button></ul>
+          </div>
+        </div>
+
+        <div id="food-questions" class="hide">
+            <h2 id="food-question-title">What type of cocktail would you like?</h2>
+            <div id="food-choices" class="choices"></div>
+        </div>
+        
+        <div id="movie-questions" class="hide">
+            <h2 id="movie-question-title">What entree would you like?</h2>
+            <div id="movie-choices" class="choices"></div>
+        </div>
+  
+        <div id="end-screen" class="hide">
+          <h2>Enjoy your night in!</h2>
+          <div id="foodResult"></div>
+          <div id="drinkResult"></div>
+          <div id="movieResult"></div>
+        </div>
+      </div>
     <script src="script.js"></script>
 </body>
 </html>
