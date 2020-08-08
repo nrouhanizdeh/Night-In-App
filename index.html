@@ -1,88 +1,97 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Night In App</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Night In App</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-    <!-- // rudy will add in the bumba style details// -->
+  <!-- // rudy will add in the bumba style details// -->
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.css">
+  <!-- style.css link -->
+  <link rel="stylesheet" href="style.css" />
 
-    <link rel="stylesheet" href="#">
-    <link rel="stylesheet" href="style.css" />
 
   <!-- end rudy area -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 
 <body>
-    <div class="wrapper">
+  <div class="wrapper">
 
-        <div id="start-screen" class="start">
-          <h1>Night In</h1>
-          <p>
-            From Drinks to Dinner & a Movie… we’re happy to help you curate the perfect date Night In.
-          </p>
-          <button id="start">Start Quiz</button>
-        </div>
-  
-        <div id="drink-questions" class="hide">
-            <h2 id="drink-question-title">What type of cocktail would you like?</h2>
-            <div id="drink-choices" class="choices">
-                <button id="butGin">Gin</button>
-                <button id="butVodka">Vodka</button>
-                <button id="butScotch">Scotch</button>
-                <button id="butTequila">Tequila</button>
-                <button id="butRum">Rum</button>
-                <button id="butBourbon">Bourbon</button>
-                <button id="butNon-alcoholic">Non-Alcoholic</button>
+    <div id="start-screen" class="start">
+      <h1>Night In</h1>
+      <p>
+        From Drinks to Dinner & a Movie… we’re happy to help you curate the perfect date Night In.
+      </p>
+      <button id="start">Start Quiz</button>
+    </div>
 
-                <!-- div for results -->
-            <!-- Next button -->
-          </div>
-        </div>
+    <div id="drink-questions" class="hide">
+      <h2 id="drink-question-title">What type of cocktail would you like?</h2>
+      <div id="drink-choices" class="choices">
+        <button id="butGin">Gin</button>
+        <button id="butVodka">Vodka</button>
+        <button id="butScotch">Scotch</button>
+        <button id="butTequila">Tequila</button>
+        <button id="butRum">Rum</button>
+        <button id="butBourbon">Bourbon</button>
+        <button id="butNon-alcoholic">Non-Alcoholic</button>
 
-        <div id="food-questions" class="hide">
-            <h2 id="food-question-title">What type of cocktail would you like?</h2>
-            <div id="food-choices" class="choices"></div>
-            <button id="butBeef">Beef</button>
-            <button id="butChicken">Chicken</button>
-            <button id="butPork">Pork</button>
-            <button id="butSeadfood">Seafood</button>
-            <button id="butPasta">Pasta</button>
-            <button id="butVegetarian">Vegetarian</button>
-            <button id="butVegan">Vegan</button>
-            <!-- div for results -->
-            <!-- Next button -->
-        </div>
-        
-        <div id="movie-questions" class="hide">
-            <h2 id="movie-question-title">What entree would you like?</h2>
-            <div id="movie-choices" class="choices"></div>
-            <button id="butAction">Action</button>
-            <button id="butAdventure">Adventure</button>
-            <button id="butComedy">Comedy</button>
-            <button id="butDrama">Drama</button>
-            <button id="butHorror">Horror</button>
-            <button id="butRomance">Romance</button>
-            <button id="butScifi">Sci-Fi</button>
+        <!-- The two below divs are the test "landing zone for the results." -->
 
-            <!-- div for results -->
-            <!-- Next button -->
-            
-        </div>
-  
-        <div id="end-screen" class="hide">
-          <h2>Enjoy your night in!</h2>
-          <div id="foodResult"></div>
-          <div id="drinkResult"></div>
-          <div id="movieResult"></div>
-        </div>
+        <div id="drink-name-display"></div>
+        <img id="drink-pic-display"></img>
+
+      
+        <!-- Next button -->
       </div>
-  
-    <script src="script.js">
-    </script>
+    </div>
+
+    <div id="food-questions" class="hide">
+      <h2 id="food-question-title">What type of cocktail would you like?</h2>
+      <div id="food-choices" class="choices"></div>
+      <button id="butBeef">Beef</button>
+      <button id="butChicken">Chicken</button>
+      <button id="butPork">Pork</button>
+      <button id="butSeadfood">Seafood</button>
+      <button id="butPasta">Pasta</button>
+      <button id="butVegetarian">Vegetarian</button>
+      <button id="butVegan">Vegan</button>
+      <!-- div for results -->
+      <!-- Next button -->
+    </div>
+
+    <div id="movie-questions" class="hide">
+      <h2 id="movie-question-title">What entree would you like?</h2>
+      <div id="movie-choices" class="choices"></div>
+      <button id="butAction">Action</button>
+      <button id="butAdventure">Adventure</button>
+      <button id="butComedy">Comedy</button>
+      <button id="butDrama">Drama</button>
+      <button id="butHorror">Horror</button>
+      <button id="butRomance">Romance</button>
+      <button id="butScifi">Sci-Fi</button>
+
+      <!-- div for results -->
+      <!-- Next button -->
+
+    </div>
+
+    <div id="end-screen" class="hide">
+      <h2>Enjoy your night in!</h2>
+      <div id="foodResult"></div>
+      <div id="drinkResult"></div>
+      <div id="movieResult"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
