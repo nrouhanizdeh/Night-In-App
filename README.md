@@ -1,6 +1,6 @@
 # Night-In-App
 
-Working Title "Night In App"
+Working Title: "Night In App"
 ​
 ​
 ## User Story
@@ -24,27 +24,27 @@ On the last page, the results will be displayed on the DOM.
 ​
 ​
 ### Modal 1 
-Endpoint: cocktailDB
-Button: [pick an alcohol, N/A option?]
-Return:[
-    - name of the drink
-    - picture of the drink
+- Endpoint: cocktailDB
+- Button: [pick an alcohol, N/A option?]
+- Return:[
+    * name of the drink
+    * picture of the drink
     ]
     
 ### Modal 2 -- Negin
-Endpoint: mealDB 
-Button: Category [Vegetarian, Seafood, Italian, etc. etc. etc. ]
-Return: [TBD
-    - name of recipe
-    - picture of recipe
+- Endpoint: mealDB 
+- Button: Category [Vegetarian, Seafood, Italian, etc. etc. etc. ]
+- Return: [TBD
+    * name of recipe
+    * picture of recipe
 ]
 ​
 ### Module 3: -- Tom 
-Endpoint: Uncogs
-Button: [pick a genre]
-Return: [
-    - TBD title?
-    - TBD poster?
+- Endpoint: Uncogs
+- Button: [pick a genre]
+- Return: [
+    * TBD title?
+    * TBD poster?
     ]
 ​
 ## User Flow Diagram:
