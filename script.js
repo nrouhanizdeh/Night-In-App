@@ -97,10 +97,11 @@ $(".foodButton").on("click", function() {
   $(".movieButton").on("click", function() {
 
     var genresId = genres[this.innerHTML];
+    // tmdb api returns 500 pages. we pick a random number from 0-300 (to be safe) and use as page number in the URL
+    var page = Math.floor(300*Math.random());
+    
 
-    //var mealUrlID = mealIds[Math.floor(meallength*Math.random())];
-
-    var movieURL = "https://api.themoviedb.org/3/discover/movie?api_key=d8e6c98ad73b8b0e9199ddfe05994eb9&language=en-US&sort_by=popularity.desc&page=1&with_genres=" + genresId
+    var movieURL = "https://api.themoviedb.org/3/discover/movie?api_key=d8e6c98ad73b8b0e9199ddfe05994eb9&language=en-US&sort_by=popularity.desc&with_genres=" + genresId + "&page=" + page;
     var posterBaseUrl = "https://image.tmdb.org/t/p/w500"
     $.ajax({
         url: movieURL,
