@@ -19,6 +19,28 @@ var meals = {
     Vegan : ["52942", "52794", "52775"]
 }
 
+var genres = { 	"Action": 28,
+                "Adventure": 12,
+                "Animation": 16,
+                "Comedy": 35,                
+                "Crime": 80,
+                "Documentary": 99,
+                "Drama": 18,
+                "Family": 10751,
+                "Fantasy": 14,
+                "History": 36,
+                "Horror": 27,
+                "Music": 10402,
+                "Mystery": 9648,
+                "Romance": 10749,
+                "Science Fiction": 878,
+                "TV Movie": 10770,
+                "Thriller": 53,
+                "War": 10752,
+                "Western": 37
+              }
+
+
 function startNightIn() {
     // hide start screen
     var startScreenEl = document.getElementById("start-screen");
@@ -72,6 +94,26 @@ $(".foodButton").on("click", function() {
       });
   });
 
+  $(".movieButton").on("click", function() {
+
+    var genresId = genres[this.innerHTML];
+
+    //var mealUrlID = mealIds[Math.floor(meallength*Math.random())];
+
+    var movieURL = "https://api.themoviedb.org/3/discover/movie?api_key=d8e6c98ad73b8b0e9199ddfe05994eb9&language=en-US&sort_by=popularity.desc&page=1&with_genres=" + genresId
+    var posterBaseUrl = "https://image.tmdb.org/t/p/w500"
+    $.ajax({
+        url: movieURL,
+        method: "GET"
+      }).then(function(response) {
+        var movieName = response.results[0].original_title;
+        var moviePic = posterBaseUrl + response.results[0].poster_path;
+
+        // take the two API response Vars above, and writes them to their respetive div/img IDs on the html
+        $("#movie-name-display").text(movieName);
+        $("#movie-pic-display").attr("src", moviePic);
+      });
+  });
 
 
 // The below function takes the two API response Vars above, and writes them to their respetive div/img IDs on the html//
