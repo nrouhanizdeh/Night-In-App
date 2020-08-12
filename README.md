@@ -103,3 +103,35 @@ System combines the users selections to create a complete night-in itinerary.
 User can choose a name for their itinerary and save it locally.
 If desired user can return to home page to start the process again.
 Returning to the saved section will show any/all dates previously saved.
+
+
+### Pseudo code
+
+//Start button
+When the user clicks the Start button
+Then set the start class to hide
+And turn the drinks dive to show
+
+//Next button
+When the user clicks the next button
+Then hide the current div container and show the next one
+
+//Results containers & div for the end of the choice selection
+When the user has selected the Next button on the Movie selection page
+Then surface the drink selection, the food selection and the movie selection with their respective images.
+
+//CSS
+Rudy & Tom - Work on the CSS to match the wireframe. Proof of Concept tomorrow night 8/12.
+
+//HTML
+Rudy & Tom - Make a new div for the results section of each category.
+
+//Logic for suggestions
+When the user makes a selection for a particular Drink (ie Gin)
+Then we'll surface suggestions for the Meal via an adjacent text string (ie "because you selected Gin we'd recommend...")
+
+PHASE 2
+
+//Previous Button
+
+//Select your music section option
