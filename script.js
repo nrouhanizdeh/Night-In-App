@@ -115,6 +115,7 @@ $(".foodButton").on("click", function() {
       });
   });
 
+
 // Tom Notes, 8/12/20, 2PM
 // - Updated all "containers" to bulma-specific "box" - Autoticlly creates a rounded box with padding.
 // - Updated the div boxes class FROM "hide" TO "is-hidden". ("is-hidden" is the bulma equivalent of "hide" for BootStap, so that for the Javascript, 
@@ -128,4 +129,40 @@ $(".foodButton").on("click", function() {
 // - Wrapped up response area of each question (picture, name of drink/meal/movie, next button in divs with same class of "results")
 // - created 12 landing divs for API called content 2 under each questions, and 6 under the final results. The "id" of the divs in the questions and the final results
 //       match, so when you target a div in the question section, it also targets the results div.
+
+
+// The below function takes the two API response Vars above, and writes them to their respetive div/img IDs on the html//
+
+
+
+// END DRINK SCRIPT //
+
+// SECTION FOOD SCRIPT //
+// END FOOD SCRIPT// 
+
+
+// SECTION = MOVIE SCRIPT //
+// END MOVIE SCRIPT //
+
+                                    //NEXT STEPS//
+                                    //Tom to work on Movie//
+                                    //Rudy to work on Food//
+
+                                    //Other things to consider:
+                                    // resizing picture//
+                                    // creating elements for the results within the div //
+
+                                        // drinkDiv.appendChild(createName);
+
+
+
+
+
+// GLOBAL VARIABLES//
+
+//Tom to insert Global Objects from Kate "Dummy Data"//
+
+
+
+
 
