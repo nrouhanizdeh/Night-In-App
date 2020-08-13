@@ -1,0 +1,32 @@
+.hero-body {
+    background-color: lightcoral;
+}
+.container {
+    background-color: whitesmoke;
+}
+
+#results { 
+    background-color: whitesmoke;
+}
+
+.tile{
+    background-color: whitesmoke;
+}
+
+#pic{
+    background-color: whitesmoke;
+}
+
+#text-display{
+    background-color: whitesmoke;
+}
+
+#drink-choices button {
+    padding: 10px 24px; /* Some padding */
+    display: block; /* Make the buttons appear below each other */
+  }
+
+#food-choices button {
+    padding: 10px 24px; /* Some padding */
+    display: block; /* Make the buttons appear below each other */
+  }
