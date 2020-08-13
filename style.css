@@ -1,3 +1,11 @@
+* {
+    font-family: sans-serif;
+}
+
+h2 {
+    font-size: x-large;
+}
+
 .hero-body {
     background-color: lightcoral;
 }
@@ -21,9 +29,10 @@
     background-color: whitesmoke;
 }
 
-#drink-choices button {
+.btn-group button {
     padding: 10px 24px; /* Some padding */
     display: block; /* Make the buttons appear below each other */
+    align: center;
   }
 
 #food-choices button {

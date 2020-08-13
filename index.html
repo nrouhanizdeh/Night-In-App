@@ -18,19 +18,24 @@
     <div class="hero">
     <div class="hero-body">
 
+      <!--Night In landing page-->
       <div id="start-screen" class="box has-text-centered is-fluid">
-        <h1 class="title">Night In</h1>
-        <p class="subtitle">
-          From Drinks to Dinner & a Movie… we’re happy to help you curate the perfect date Night In.
-        </p>
-        <button class="button is-medium is-danger is-outlined" id="start">Start planning your Night In!</button>
-        </div>
 
+        <h1 class="title is-family-monospace">Night In</h1>
+        <p class="subtitle is-family-monospace">From Drinks to Dinner & a Movie… we’re happy to help you curate the perfect date Night In.</p>
+        <button class="button is-medium is-danger is-outlined is-family-monospace" id="start">Start planning your Night In!</button>
+
+      </div>
+
+      <!--Questions, Choices and Results for Drinks, Food and Movies.-->
       <div class="columns is-multiline has-text-centered is-fluid">
 
+        <!--Drink Question-->
         <div class="column is-one-third">
           <div id="drink-questions" class="box is-fluid">
             <h2 id="drink-question-title">What do you feel like drinking?</h2>
+
+            <!--Drink Choices-->
             <div id="drink-choices" class="choices btn-group">
               <button class="drinkButton button is-danger is-outlined" id="butGin">Gin</button>
               <button class="drinkButton button is-danger is-outlined" id="butVodka">Vodka</button>
@@ -40,6 +45,7 @@
               <button class="drinkButton button is-danger is-outlined" id="butBourbon">Bourbon</button>
               <button class="drinkButton button is-danger is-outlined" id="butNon-alcoholic">Non_Alcoholic</button>
 
+              <!--Drink Results-->
               <div>
                 <div id="drink-name-display" class="text-display">[Drink Name]</div>
                 <img id="drink-pic-display" class="pic image is-square">[Drink Pic]</img>
@@ -50,11 +56,13 @@
           </div>
         </div>
 
-
+        <!--Food Question-->
         <div class="column is-one-third">
           <div id="food-questions" class="box is-fluid">
             <h2 id="food-question-title">What do you feel like eating?</h2>
-            <div id="food-choices" class="choices btn-group"></div>
+
+            <!--Food Choices-->
+            <div id="food-choices" class="choices btn-group">
               <button class="foodButton button is-danger is-outlined" id="butBeef">Beef</button>
               <button class="foodButton button is-danger is-outlined" id="butChicken">Chicken</button>
               <button class="foodButton button is-danger is-outlined" id="butPork">Pork</button>
@@ -62,6 +70,9 @@
               <button class="foodButton button is-danger is-outlined" id="butPasta">Pasta</button>
               <button class="foodButton button is-danger is-outlined" id="butVegetarian">Vegetarian</button>
               <button class="foodButton button is-danger is-outlined" id="butVegan">Vegan</button>
+            </div>
+
+            <!--Food Results-->
             <div>
               <div id="meal-name-display" class="text-display">[Food Name]</div>
               <img id="meal-pic-display" class="pic image is-square">[Food Pic]</img>
@@ -71,19 +82,23 @@
           </div>
         </div>
 
-
+        <!--Movie Question-->
         <div class="column is-one-third">
           <div id="movie-questions" class="box is-fluid">
-            <h2 id="movie-question-title">What type of movie?</h2>
-            <div id="movie-choices" class="choices btn-group"></div>
-            <button class="movieButton button is-danger is-outlined" id="butAction">Action</button>
-            <button class="movieButton button is-danger is-outlined" id="butAdventure">Adventure</button>
-            <button class="movieButton button is-danger is-outlined" id="butComedy">Comedy</button>
-            <button class="movieButton button is-danger is-outlined" id="butDrama">Drama</button>
-            <button class="movieButton button is-danger is-outlined" id="butHorror">Horror</button>
-            <button class="movieButton button is-danger is-outlined" id="butRomance">Romance</button>
-            <button class="movieButton button is-danger is-outlined" id="butScifi">Science Fiction</button>
+            <h2 id="movie-question-title">What type of movie would you like to watch?</h2>
+            
+            <!--Movie Choices-->
+            <div id="movie-choices" class="choices btn-group">
+              <button class="movieButton button is-danger is-outlined" id="butAction">Action</button>
+              <button class="movieButton button is-danger is-outlined" id="butAdventure">Adventure</button>
+              <button class="movieButton button is-danger is-outlined" id="butComedy">Comedy</button>
+              <button class="movieButton button is-danger is-outlined" id="butDrama">Drama</button>
+              <button class="movieButton button is-danger is-outlined" id="butHorror">Horror</button>
+              <button class="movieButton button is-danger is-outlined" id="butRomance">Romance</button>
+              <button class="movieButton button is-danger is-outlined" id="butScifi">Science Fiction</button>
+            </div>
 
+            <!--Movie Results-->
             <div>
               <div id="movie-name-display" class="text-display">[Movie Title]</div>
               <img id="movie-pic-display" class="pic image is-square">[Movie Poster]</img>
@@ -93,30 +108,40 @@
           </div>
         </div>
 
-      </div>
+    </div>
 
-      <div class="box">
-        <div id="end-screen" class="is-fluid">
-          <h2 class="subtitle has-text-centered">Enjoy your night in!</h2>
+    <!--Final Date Results Div-->
+    <div class="box">
+      <div id="end-screen" class="is-fluid">
+        <h2 class="subtitle has-text-centered">Enjoy your night in!</h2>
+          
           <div class="columns is-multiline">
+            
+            <!--Drink Results-->
             <div id="drink-result" class="column is-one-third is-fluid box">
               <div id="drink-name-display" class="text-display">[Drink Name]</div>
               <img id="drink-pic-display pic image is-square" class="pic">[Drink Pic]</img>
             </div>
+            
+            <!--Food Results-->
             <div id="meal-result" class="column is-one-third is-fluid box">
               <div id="meal-name-display" class="text-display">[Food Name]</div>
               <img id="meal-pic-display pic image is-square" class="pic">[Food Pic]</img>
             </div>
+
+            <!--Food Results-->
             <div id="movie-result" class="column is-one-third is-fluid box">
               <div id="movie-name-display" class="text-display">[Movie Title]</div>
               <img id="movie-pic-display pic image is-square" class="pic">[Movie Poster]</img>
             </div>
+          
           </div>
-        </div>
       </div>
     </div>
+    
+  
   </div>
-  </div>
+</div>
   <script src="script.js"></script>
 </body>
 
