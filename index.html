@@ -21,17 +21,17 @@
       <!--Night In landing page-->
       <div id="start-screen" class="box has-text-centered is-fluid">
 
-        <h1 class="title is-family-monospace">Night In</h1>
-        <p class="subtitle is-family-monospace">From Drinks to Dinner & a Movie… we’re happy to help you curate the perfect date Night In.</p>
-        <button class="button is-medium is-danger is-outlined is-family-monospace" id="start">Start planning your Night In!</button>
+        <h1 class="title">Night In</h1>
+        <p class="subtitle">From Drinks to Dinner & a Movie… we’re happy to help you curate the perfect date Night In.</p>
+        <button class="button is-medium is-danger is-outlined" id="start">Start planning your Night In!</button>
 
       </div>
 
       <!--Questions, Choices and Results for Drinks, Food and Movies.-->
-      <div class="columns is-multiline has-text-centered is-fluid">
+      <div class="columns is-multiline is-fluid">
 
         <!--Drink Question-->
-        <div class="column is-one-third">
+        <div class="column is-one-third is-hidden">
           <div id="drink-questions" class="box is-fluid">
             <h2 id="drink-question-title">What do you feel like drinking?</h2>
 
@@ -44,20 +44,21 @@
               <button class="drinkButton button is-danger is-outlined" id="butRum">Rum</button>
               <button class="drinkButton button is-danger is-outlined" id="butBourbon">Bourbon</button>
               <button class="drinkButton button is-danger is-outlined" id="butNon-alcoholic">Non_Alcoholic</button>
+            </div>
 
               <!--Drink Results-->
-              <div>
+              <div class="drink-results is-hidden">
                 <div id="drink-name-display" class="text-display">[Drink Name]</div>
                 <img id="drink-pic-display" class="pic image is-square">[Drink Pic]</img>
                 <button class="nextButton button is-danger is-outlined">Next</button>
               </div>
 
-            </div>
+            
           </div>
         </div>
 
         <!--Food Question-->
-        <div class="column is-one-third">
+        <div class="column is-one-third is-hidden">
           <div id="food-questions" class="box is-fluid">
             <h2 id="food-question-title">What do you feel like eating?</h2>
 
@@ -72,18 +73,18 @@
               <button class="foodButton button is-danger is-outlined" id="butVegan">Vegan</button>
             </div>
 
-            <!--Food Results-->
-            <div>
-              <div id="meal-name-display" class="text-display">[Food Name]</div>
-              <img id="meal-pic-display" class="pic image is-square">[Food Pic]</img>
-              <button class="nextButton button is-danger is-outlined">Next</button>
-            </div>
+              <!--Food Results-->
+              <div class="food-results is-hidden">
+                <div id="meal-name-display" class="text-display">[Food Name]</div>
+                  <img id="meal-pic-display" class="pic image is-square">[Food Pic]</img>
+                  <button class="nextButton button is-danger is-outlined">Next</button>
+              </div>
 
           </div>
         </div>
 
         <!--Movie Question-->
-        <div class="column is-one-third">
+        <div class="column is-one-third is-hidden">
           <div id="movie-questions" class="box is-fluid">
             <h2 id="movie-question-title">What type of movie would you like to watch?</h2>
             
@@ -98,12 +99,13 @@
               <button class="movieButton button is-danger is-outlined" id="butScifi">Science Fiction</button>
             </div>
 
-            <!--Movie Results-->
-            <div>
-              <div id="movie-name-display" class="text-display">[Movie Title]</div>
-              <img id="movie-pic-display" class="pic image is-square">[Movie Poster]</img>
-              <button class="nextButton button is-danger is-outlined">Next</button>
-            </div>
+
+              <!--Movie Results-->
+              <div class="movie-results is-hidden">
+                <div id="movie-name-display" class="text-display">[Movie Title]</div>
+                <img id="movie-pic-display" class="pic image is-square">[Movie Poster]</img>
+                <button class="nextButton button is-danger is-outlined">Next</button>
+              </div>
 
           </div>
         </div>
@@ -111,7 +113,7 @@
     </div>
 
     <!--Final Date Results Div-->
-    <div class="box">
+    <div class="box is-hidden">
       <div id="end-screen" class="is-fluid">
         <h2 class="subtitle has-text-centered">Enjoy your night in!</h2>
           
@@ -134,7 +136,7 @@
               <div id="movie-name-display" class="text-display">[Movie Title]</div>
               <img id="movie-pic-display pic image is-square" class="pic">[Movie Poster]</img>
             </div>
-          
+
           </div>
       </div>
     </div>
