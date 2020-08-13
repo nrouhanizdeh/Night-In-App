@@ -31,7 +31,7 @@ h2 {
 
 img {
     max-height: 405px;
-    max-width: 405px;
+    position: center;
 }
 
 .btn-group button {
