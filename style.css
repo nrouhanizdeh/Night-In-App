@@ -1,3 +1,11 @@
+* {
+    font-family: sans-serif;
+}
+
+h2 {
+    font-size: x-large;
+}
+
 .hero-body {
     background-color: lightcoral;
 }
@@ -19,4 +27,19 @@
 
 #text-display{
     background-color: whitesmoke;
+}
+
+
+.btn-group button {
+    padding: 10px 24px 10px 24px; /* Some padding */
+    display: flex;
+    flex-direction: column;
+    margin: 5px auto;
+    position: center;
+    width: 100%;
+  }
+
+#drink-choices, #food-choices, #movie-choices {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
