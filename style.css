@@ -29,6 +29,10 @@ h2 {
     background-color: whitesmoke;
 }
 
+img {
+    max-height: 405px;
+    position: center;
+}
 
 .btn-group button {
     padding: 10px 24px 10px 24px; /* Some padding */
