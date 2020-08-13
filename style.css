@@ -47,3 +47,11 @@ img {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+.image-box {
+    justify-content: center;
+}
+
+.nextButton {
+    padding-top: 25px;
+}
