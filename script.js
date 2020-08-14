@@ -62,22 +62,22 @@ $(".drinkButton").on("click", function() {
         //var drinkType = JSON.parse(localStorage.getItem("drinkType"));
         var drinkType=this.id;
 
-        if (drinkType="butGin"){
+        if (drinkType==="butGin"){
             $("#pairings").text("Seafood & Vegetarian");
         }
-        if(drinkType="butVodka"){
+        if(drinkType==="butVodka"){
             $("#pairings").text("Pork & Beef");
         }
-        if (drinkType="butTequila"){
+        if (drinkType==="butTequila"){
             $("#pairings").text("Seafood, Pork, Beef & Vegetarian");
         }
-        if (drinkType="butRum"){
+        if (drinkType==="butRum"){
             $("#pairings").text("Beef, Chicken, Vegetarian, Seafood & Pork")
         }
-        if (drinkType="butBourbon"){
+        if (drinkType==="butBourbon"){
             $("#pairings").text("Steak, Pork & Pasta");
         }
-        if(drinkType="butNon-alcoholic"){
+        if(drinkType==="butNon-alcoholic"){
             $("#pairings").text("The world is your oyster!");
         }
 
