@@ -39,12 +39,30 @@ var genres = { 	"Action": 28,
                 "Western": 37
               }
 
+var startButtonEl = document.getElementById("start");
+var drinkDivEl = document.getElementById("drink-questions");
+var foodDivEl = document.getElementById("food-questions");
+var movieDivEl = document.getElementById("movie-questions");
+var endDivEl = document.getElementById("end-screen");
+var drinkNextBtn = document.getElementById("drink-next");
+var foodNextBtn = document.getElementById("food-next");
+var movieNextBtn = document.getElementById("movie-next");
+var drinkIconEl = document.getElementById("drinkIcon");
+var foodIconEl = document.getElementById("foodIcon");
+var movieIconEl = document.getElementById("movieIcon");
 
 function startNightIn() {
     // hide start screen
     var startScreenEl = document.getElementById("start-screen");
     startScreenEl.setAttribute("class", "hide");
   }
+
+//Start button
+$("#start").on("click", function(){
+  drinkDivEl.setAttribute("class", "box is-fluid fade-in");
+  startButtonEl.setAttribute("class","button is-medium is-danger is-inverted")
+  //startButtonEl.innerHTML("Night In planning in progress");
+});
 
 
 //need the choice class
@@ -97,8 +115,17 @@ $(".drinkButton").on("click", function() {
         $("#final-drink-name-display").text(drinkName);
         $("#final-drink-pic-display").attr("src", drinkPic);
       });
+
+  //Reveal the drinkNext button
+  drinkNextBtn.setAttribute("class", "nextButton button is-danger is-medium fade-in");
   });
 
+//Drink next button
+$("#drink-next").click(function(){
+  foodDivEl.setAttribute("class", "box is-fluid fade-in");
+  drinkDivEl.setAttribute("class", "box is-fluid fade-out");
+  drinkIconEl.setAttribute("class", "fas fa-check-circle fa-lg");
+});
 
 $(".foodButton").on("click", function() {
 
@@ -122,7 +149,18 @@ $(".foodButton").on("click", function() {
         $("#final-meal-name-display").text(mealName);
         $("#final-meal-pic-display").attr("src", mealPic);        
       });
+
+  //Reveal the foodNext button
+  foodNextBtn.setAttribute("class", "nextButton button is-danger is-medium fade-in");
   });
+
+//Food next
+$("#food-next").click(function(){
+  foodDivEl.setAttribute("class", "box is-fluid fade-out");
+  movieDivEl.setAttribute("class", "box is-fluid fade-in");
+  foodIconEl.setAttribute("class","fas fa-check-circle fa-lg");
+});
+
 
   $(".movieButton").on("click", function() {
 
@@ -146,7 +184,23 @@ $(".foodButton").on("click", function() {
         $("#final-movie-name-display").text(movieName);
         $("#final-movie-pic-display").attr("src", moviePic);
       });
+
+  //Reveal the movieNext button
+  movieNextBtn.setAttribute("class", "nextButton button is-danger is-medium fade-in");
+
   });
+
+//Movie next button
+$("#movie-next").click(function(){
+  drinkDivEl.setAttribute("class", "box is-fluid fade-in");
+  foodDivEl.setAttribute("class", "box is-fluid fade-in");
+  movieIconEl.setAttribute("class","fas fa-check-circle fa-lg");
+  endDivEl.setAttribute("class", "box is-fluid fade-in");
+
+
+
+});
+
 
 // be careful
 

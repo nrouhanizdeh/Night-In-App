@@ -6,7 +6,7 @@
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <title>Night-In</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.css">
   <link rel="stylesheet" href="style.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -23,7 +23,7 @@
 
         <h1 class="title">Night In</h1>
         <p class="subtitle">From Drinks to Dinner & a Movie… we’re happy to help you curate the perfect date Night In.</p>
-        <button class="button is-medium is-danger is-outlined" id="start">Start planning your Night In!</button>
+        <button class="button is-medium is-danger" id="start">Start planning your Night In!</button>
 
       </div>
 
@@ -31,8 +31,8 @@
       <div class="columns is-multiline is-fluid">
 
         <!--Drink Question-->
-        <div class="column is-one-third">
-          <div id="drink-questions" class="box is-fluid">
+        <div  class="column is-one-third">
+          <div id="drink-questions" class="box is-fluid is-hidden">
             <h2 id="drink-question-title">What do you feel like drinking?</h2>
 
             <!--Drink Choices-->
@@ -51,7 +51,11 @@
                 <div id="drink-name-display" class="text-display has-text-centered subtitle"></div>
                 <div class="image-box is-flex"><img id="drink-pic-display" class="pic image is-centered"></img></div>
                 <br>
-                <div class="has-text-centered"><button class="nextButton button is-danger is-outlined">Next</button></div>
+                <div class="nextButtonDiv">
+                  <button id="drink-next" class="nextButton button is-danger is-medium is-hidden">
+                    <i id="drinkIcon" class="far fa-arrow-alt-circle-right fa-lg"></i>
+                  </button>
+                </div>
               </div>
 
             
@@ -60,7 +64,7 @@
 
         <!--Food Question-->
         <div class="column is-one-third">
-          <div id="food-questions" class="box is-fluid">
+          <div id="food-questions" class="box is-fluid is-hidden">
             <h2 id="food-question-title">What do you feel like eating?</h2>
             <div id="sugg"></div><div id="pairings"></div>
             
@@ -81,7 +85,11 @@
                 <div id="meal-name-display" class="text-display has-text-centered subtitle"></div>
                 <div class="image-box is-flex"><img id="meal-pic-display" class="pic image is-centered"></img></div>
                   <br>
-                  <div class="has-text-centered"><button class="nextButton button is-danger is-outlined">Next</button></div>
+                  <div class="nextButtonDiv">
+                    <button id="food-next" class="nextButton button is-danger is-inverted is-medium is-hidden">
+                      <i id="foodIcon" class="far fa-arrow-alt-circle-right fa-lg"></i>
+                    </button>
+                  </div>
               </div>
 
           </div>
@@ -89,10 +97,11 @@
 
         <!--Movie Question-->
         <div class="column is-one-third">
-          <div id="movie-questions" class="box is-fluid">
+          <div id="movie-questions" class="box is-fluid is-hidden">
             <h2 id="movie-question-title">What type of movie sounds good?</h2>
             <div id="suggestions"></div>
               <div id="food-choices" class="choices"></div>
+
             <!--Movie Choices-->
             <div id="movie-choices" class="choices btn-group">
               
@@ -111,7 +120,11 @@
                 <div id="movie-name-display" class="text-display has-text-centered subtitle"></div>
                 <div class="image-box is-flex"><img id="movie-pic-display" class="pic image is-centered"></img></div>
                 <br>
-                <div class="has-text-centered"><button class="nextButton button is-danger is-outlined">Next</button></div>
+                <div class="nextButtonDiv">
+                  <button id="movie-next" class="nextButton button is-danger is-medium is-hidden">
+                    <i id="movieIcon" class="far fa-arrow-alt-circle-right fa-lg"></i>
+                  </button>
+                  </div>
               </div>
 
           </div>
@@ -120,8 +133,8 @@
     </div>
 
     <!--Final Date Results Div-->
-    <div class="box">
-      <div id="end-screen" class="is-fluid">
+    <div id="end-screen" class="box is-hidden">
+      <div  class="is-fluid">
         <h2 class="subtitle has-text-centered">Enjoy your night in!</h2>
           
           <div class="columns is-multiline">
