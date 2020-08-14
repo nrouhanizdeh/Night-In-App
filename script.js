@@ -67,6 +67,8 @@ $(".drinkButton").on("click", function() {
         // take the two API response Vars above, and writes them to their respetive div/img IDs on the html
         $("#drink-name-display").text(drinkName);
         $("#drink-pic-display").attr("src", drinkPic);
+        $("#final-drink-name-display").text(drinkName);
+        $("#final-drink-pic-display").attr("src", drinkPic);
       });
   });
 
@@ -90,6 +92,8 @@ $(".foodButton").on("click", function() {
         // take the two API response Vars above, and writes them to their respetive div/img IDs on the html
         $("#meal-name-display").text(mealName);
         $("#meal-pic-display").attr("src", mealPic);
+        $("#final-meal-name-display").text(mealName);
+        $("#final-meal-pic-display").attr("src", mealPic);        
       });
   });
 
@@ -112,55 +116,11 @@ $(".foodButton").on("click", function() {
         // take the two API response Vars above, and writes them to their respetive div/img IDs on the html
         $("#movie-name-display").text(movieName);
         $("#movie-pic-display").attr("src", moviePic);
+        $("#final-movie-name-display").text(movieName);
+        $("#final-movie-pic-display").attr("src", moviePic);
       });
   });
 
-
-// Tom Notes, 8/12/20, 2PM
-// - Updated all "containers" to bulma-specific "box" - Autoticlly creates a rounded box with padding.
-// - Updated the div boxes class FROM "hide" TO "is-hidden". ("is-hidden" is the bulma equivalent of "hide" for BootStap, so that for the Javascript, 
-//       simply re-write the class to maintain the current class, besides "is-hidden")
-// - Corrected incorrect questions in HTML hard code, change the verbiage be more clear
-// -  Deployed bulma-specific classes of "subtitle" and "title", which change size and impact of font.
-// - added "is-fluid" to div container classes to give the divs top and bottom margins
-// - Deployed bulma-specific "Hero/Hero.body" classes to  - added wrapper div with a class of "hero" and changed the previous outermost dive to "hero-body", which is a design
-//   element, which will keep all the content front an center, like a hero image" Essentially wraps all the body contents
-// - deployed Bulmas class "has-text-centered" to center all applicable elments (texts/ and buttons) within a box
-// - Wrapped up response area of each question (picture, name of drink/meal/movie, next button in divs with same class of "results")
-// - created 12 landing divs for API called content 2 under each questions, and 6 under the final results. The "id" of the divs in the questions and the final results
-//       match, so when you target a div in the question section, it also targets the results div.
-
-
-// The below function takes the two API response Vars above, and writes them to their respetive div/img IDs on the html//
-
-
-
-// END DRINK SCRIPT //
-
-// SECTION FOOD SCRIPT //
-// END FOOD SCRIPT// 
-
-
-// SECTION = MOVIE SCRIPT //
-// END MOVIE SCRIPT //
-
-                                    //NEXT STEPS//
-                                    //Tom to work on Movie//
-                                    //Rudy to work on Food//
-
-                                    //Other things to consider:
-                                    // resizing picture//
-                                    // creating elements for the results within the div //
-
-                                        // drinkDiv.appendChild(createName);
-
-
-
-
-
-// GLOBAL VARIABLES//
-
-//Tom to insert Global Objects from Kate "Dummy Data"//
 
 
 
