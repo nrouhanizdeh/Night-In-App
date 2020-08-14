@@ -28,10 +28,10 @@
       </div>
 
       <!--Questions, Choices and Results for Drinks, Food and Movies.-->
-      <div class="columns is-multiline is-fluid">
+      <div id="questionsDiv" class="columns is-multiline is-fluid">
 
         <!--Drink Question-->
-        <div  class="column is-one-third">
+        <div id="drink-div-container" class="column is-one-third">
           <div id="drink-questions" class="box is-fluid is-hidden">
             <h2 id="drink-question-title">What do you feel like drinking?</h2>
 
@@ -47,7 +47,7 @@
             </div>
 
               <!--Drink Results-->
-              <div class="drink-results">
+              <div class="drink-results is-clearfix">
                 <div id="drink-name-display" class="text-display has-text-centered subtitle"></div>
                 <div class="image-box is-flex"><img id="drink-pic-display" class="pic image is-centered"></img></div>
                 <br>
@@ -63,7 +63,7 @@
         </div>
 
         <!--Food Question-->
-        <div class="column is-one-third">
+        <div id="food-div-container" class="column is-one-third">
           <div id="food-questions" class="box is-fluid is-hidden">
             <h2 id="food-question-title">What do you feel like eating?</h2>
             <div id="sugg"></div><div id="pairings"></div>
@@ -81,7 +81,7 @@
             </div>
 
               <!--Food Results-->
-              <div class="food-results">
+              <div class="food-results is-clearfix">
                 <div id="meal-name-display" class="text-display has-text-centered subtitle"></div>
                 <div class="image-box is-flex"><img id="meal-pic-display" class="pic image is-centered"></img></div>
                   <br>
@@ -96,7 +96,7 @@
         </div>
 
         <!--Movie Question-->
-        <div class="column is-one-third">
+        <div id="movie-div-container" class="column is-one-third">
           <div id="movie-questions" class="box is-fluid is-hidden">
             <h2 id="movie-question-title">What type of movie sounds good?</h2>
             <div id="suggestions"></div>
@@ -116,7 +116,7 @@
 
 
               <!--Movie Results-->
-              <div class="movie-results">
+              <div class="movie-results is-clearfix">
                 <div id="movie-name-display" class="text-display has-text-centered subtitle"></div>
                 <div class="image-box is-flex"><img id="movie-pic-display" class="pic image is-centered"></img></div>
                 <br>

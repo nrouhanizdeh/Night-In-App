@@ -61,7 +61,7 @@ function startNightIn() {
 $("#start").on("click", function(){
   drinkDivEl.setAttribute("class", "box is-fluid fade-in");
   startButtonEl.setAttribute("class","button is-medium is-danger is-inverted")
-  //startButtonEl.innerHTML("Night In planning in progress");
+  startButtonEl.innerHTML = "Night In planning in progress...";
 });
 
 

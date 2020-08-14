@@ -2,6 +2,33 @@
     font-family: sans-serif;
 }
 
+/*
+div .hero-body{
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+div #drink-div-container, #food-div-container, #movie-div-container {
+    max-width: 350px;
+}
+
+#drink-div-container {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#movie-div-container {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+*/
+
+.box {
+    padding: .66rem;
+}
+
 h2 {
     font-size: x-large;
 }
@@ -57,7 +84,7 @@ img {
 }
 
 .nextButton {
-    padding-top: -25px;
+    /*padding-top: px;*/
 }
 
 .fade-in {
@@ -113,6 +140,7 @@ img {
     -moz-animation: fadeOut ease 1s forwards;
     -o-animation: fadeOut ease 1s forwards;
     -ms-animation: fadeOut ease 1s forwards;
+    display: none;
   }
 
   @keyframes fadeOut {
@@ -121,6 +149,7 @@ img {
     }
     100% {
       opacity:0;
+
     }
   }
 
