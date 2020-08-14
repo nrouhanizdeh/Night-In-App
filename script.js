@@ -152,7 +152,7 @@ $(".foodButton").on("click", function() {
 
 var ginComments = ["only snobs drink gin", "my uncle drank gin once and now he's a better person", "the song Bathtub Gin by Phish changed my life", "gin goes down smooth"];
 var vodkaComments = ["you can't even really taste vodka", "vodka is the national drink of Russia", "some say the Polish secretly make good vodka", " you know what they say: a vodka a day is gross", "vodka takes no prisoners"];
-var scotchComments = ["you can barely understand the Scottish", "scotch pairs nicely with golf" "don't confuse this kind of scotch with the tape", "scotch will put hair on your chest, (if you are a man)"];
+var scotchComments = ["you can barely understand the Scottish", "scotch pairs nicely with golf", "don't confuse this kind of scotch with the tape", "scotch will put hair on your chest, (if you are a man)"];
 var tequilaComments = ["you are the one who decided tequila was a good idea", "tequila is known to make people very tired. Ya, let's go with tired", "tequila can not be trusted", "try not to drink as many tequilas as last time"];
 var rumComments = ["Captain Jack Sparrow drinks rum and he's in bad shape", "does your mother know you drink rum", "this isn't Cancun, so easy on the rum", "rum can make you want to go to the beach"];
 var bourbonComments = ["bouron will straight-up CHANGE you", "bourbon was the only thing that helped me finish college", "bourbon makes the night a wild one", "I never met a bourbon-drinker I didn't like"];
