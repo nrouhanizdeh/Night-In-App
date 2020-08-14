@@ -57,6 +57,33 @@ $(".drinkButton").on("click", function() {
 
     var drinkURL = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=" + DrinkUrlID;
 
+    //localStorage.setItem("drinkType", JSON.stringify(this.id));
+
+        //var drinkType = JSON.parse(localStorage.getItem("drinkType"));
+        var drinkType=this.id;
+
+        if (drinkType="butGin"){
+            $("#pairings").text("Seafood & Vegetarian");
+        }
+        if(drinkType="butVodka"){
+            $("#pairings").text("Pork & Beef");
+        }
+        if (drinkType="butTequila"){
+            $("#pairings").text("Seafood, Pork, Beef & Vegetarian");
+        }
+        if (drinkType="butRum"){
+            $("#pairings").text("Beef, Chicken, Vegetarian, Seafood & Pork")
+        }
+        if (drinkType="butBourbon"){
+            $("#pairings").text("Steak, Pork & Pasta");
+        }
+        if(drinkType="butNon-alcoholic"){
+            $("#pairings").text("The world is your oyster!");
+        }
+
+        $("#sugg").text("Based on your drink selection, we suggest the following meal pairings:");
+
+
     $.ajax({
         url: drinkURL,
         method: "GET"
