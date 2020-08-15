@@ -32,7 +32,7 @@ https://api.themoviedb.org
 ​
 ## User Story
 ​​
-
+```
 AS A person who can't or won't be going out for the night
 I WANT to see options for drink recipes, meal recipes and movies
 SO THAT I can curate aspects of a nice evening spent indoors
@@ -59,3 +59,7 @@ THEN a movie option will appear
 WHEN I move on to the next step
 THEN I am presented with curated advice from the experts based on my selections along with the three components of my Night-In selections
 ```
+​
+## Visualization of App Interface
+​
+
