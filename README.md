@@ -7,24 +7,32 @@ Now more than ever, people are spending more time at home.  As developers we wan
 ## Live Link to Deployed App
 ​
 https://nrouhanizdeh.github.io/Night-In-App/
-​​
+​
 
 ## Technologies Utilized 
 ​
+https://www.thecocktaildb.com/
+```
+```
+https://www.themealdb.com/
+```
+```
+https://www.themoviedb.org/documentation/api
+```
+```
 ```
 Generating drink suggestions API:
-https://www.thecocktaildb.com
+​​
 -Math random is used on lists of cocktail recipes based on the users ingredients selection to generate a random ID.  
 -This ID is used in an API call to return the corresponding name and photo from the database.
-
+​
 Generating meal suggestions API:
-https://www.themealdb.com
+​
 -Math random is used on lists of meal recipes based on the users ingredients selection to generate a random ID.  
 -This ID is used in an API call to return the corresponding name and photo from the database.
-
-
+​
 Generating movie suggestions API:
-https://api.themoviedb.org
+​
 -Math random is used on lists of movie titles based on the users genre selection to generate a movie from the top 300 results.  
 -This ID is used in an API call to return the corresponding name and photo from the database.
 
@@ -63,3 +71,4 @@ THEN I am presented with curated advice from the experts based on my selections 
 ## Visualization of App Interface
 ​
 <img src="https://github.com/nrouhanizdeh/Night-In-App/blob/master/images/Night-In%20(5).gif?raw=true"></img>
+<img src="https://github.com/nrouhanizdeh/Night-In-App/blob/master/images/Night-In%20(8).gif?raw=true"></img>
