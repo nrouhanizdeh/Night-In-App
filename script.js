@@ -233,27 +233,27 @@ $(".foodButton").on("click", function() {
 
     if (mealType==="butBeef"){
       //$("#pairings").text("Seafood & Vegetarian");
-      $("#butAction").attr("class","foodButton button is-info is-outlined");
+      $("#butAction").attr("class","foodButton button is-success is-outlined");
     }
     if (mealType==="butChicken"){
         //$("#pairings").text("Pork & Beef");
-        $("#butComedy").attr("class","foodButton button is-info is-outlined");
+        $("#butComedy").attr("class","foodButton button is-success is-outlined");
     }
     if (mealType==="butPork"){
         //$("#pairings").text("Seafood, Pork, Beef & Vegetarian");
-        $("#butHorror").attr("class","foodButton button is-info is-outlined");
+        $("#butHorror").attr("class","foodButton button is-success is-outlined");
     }
     if (mealType==="butSeadfood"){
         //$("#pairings").text("Beef, Chicken, Vegetarian, Seafood & Pork")
-        $("#butScifi").attr("class","foodButton button is-info is-outlined");
+        $("#butScifi").attr("class","foodButton button is-success is-outlined");
     }
     if (mealType==="butPasta"){
         //$("#pairings").text("Steak, Pork & Pasta");
-        $("#butDrama").attr("class","foodButton button is-info is-outlined");
+        $("#butDrama").attr("class","foodButton button is-success is-outlined");
     }
     if(mealType==="butVegetarian"){
         //$("#pairings").text("The world is your oyster!");
-        $("#butRomance").attr("class","foodButton button is-info is-outlined");
+        $("#butRomance").attr("class","foodButton button is-success is-outlined");
     }
 
     if(mealType==="butVegan"){
@@ -261,7 +261,7 @@ $(".foodButton").on("click", function() {
       $("#butAdventure").attr("class","foodButton button is-success is-outlined");
   }
 
-    $("#suggestions").text("Based on your drink & meal selections, our movie recommendation is in blue.");
+    $("#suggestions").text("Based on your drink & meal selections, our movie recommendation is in green.");
 
     $.ajax({
         url: mealURL,
