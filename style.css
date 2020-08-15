@@ -1,10 +1,19 @@
 * {
-    font-family: sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .title {
   font-family: 'Kristi', cursive;
   font-size: 60pt;
+}
+
+#end-title {
+    font-family: 'Kristi', cursive;
+    font-size: 45pt;   
+}
+
+#start-screen {
+    margin-bottom: 30px;
 }
 
 .transbox {
@@ -24,8 +33,32 @@ div #question-container {
     padding: .66rem;
 }
 
+.box:not(:last-child) {
+    margin-bottom: 0rem;
+}
+
 h2 {
     font-size: x-large;
+}
+
+#end-results-div {
+    margin-top: 12px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+@media screen and (min-width: 768px) {
+
+#end-results-div img {
+    max-height: 338.53px;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+    #end-results-div img {
+        max-width: 338.53px;
+    }
 }
 
 .hero-body {
@@ -56,13 +89,17 @@ img {
     position: center;
 }
 
+.button {
+    border-radius: 15px 15px 15px 15px;
+}
+
 .btn-group button {
     padding: 10px 10px 10px 10px; /* Some padding */
     display: flex;
     flex-direction: column;
     margin: 5px auto;
     position: center;
-    width: 100%;
+    width: 50%;
   }
 
 #drink-choices, #food-choices, #movie-choices {
@@ -126,18 +163,40 @@ img {
         }
       }
 
+      .fade-in-start {
+        animation: fadeInStart ease 2s;
+        -webkit-animation: fadeInStart ease 2s;
+
+      }
+    
+      @keyframes fadeInStart {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:.8;
+        }
+      }
+    
+      /* Chrome */  
+      @-webkit-keyframes fadeInStart {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:.8;
+        }
+      }
+    
+
+
 
       .nextButton {
-        background-color: #1c87c9;
-        -webkit-border-radius: 60px;
-        border-radius: 60px;
         border: none;
         color: #eeeeee;
         cursor: pointer;
         display: inline-block;
-        font-family: sans-serif;
         font-size: 20px;
-        padding: 10px 10px;
         text-align: center;
         text-decoration: none;
       }
