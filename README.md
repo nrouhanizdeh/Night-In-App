@@ -1,8 +1,35 @@
 # Night-In-App
 
-Working Title: "Night In App"
+Now more than ever, people are spending more time at home.  As developers we want to provide users with a singular tool to make the most of their evenings spend in doors.
 ​
 ​
+
+## Live Link to Deployed App
+
+https://nrouhanizdeh.github.io/Night-In-App/
+
+
+## Technologies Utilized 
+​
+```
+Generating drink suggestions API:
+https://www.thecocktaildb.com
+-Math random is used on lists of cocktail recipes based on the users ingredients selection to generate a random ID.  
+-This ID is used in an API call to return the corresponding name and photo from the database.
+
+Generating meal suggestions API:
+https://www.themealdb.com
+-Math random is used on lists of meal recipes based on the users ingredients selection to generate a random ID.  
+-This ID is used in an API call to return the corresponding name and photo from the database.
+
+
+Generating movie suggestions API:
+https://api.themoviedb.org
+-Math random is used on lists of movie titles based on the users genre selection to generate a movie from the top 300 results.  
+-This ID is used in an API call to return the corresponding name and photo from the database.
+
+
+
 ## User Story
 ​
 ```
@@ -11,97 +38,23 @@ I WANT to see options for drink recipes, meal recipes and movies
 SO THAT I can curate aspects of a nice evening spent indoors
 ```
 
-## Acceptance Criteria
+## User Flow Diagram
 ```
 GIVEN I am using the Night-In app to curate food, drink and entertainment for the evening
 WHEN I open the Night-In app
 THEN the start page is displayed
 WHEN I click the start button
 THEN I am presented with a list of ingredients options for what I want my DRINK to include
-WHEN I save my preference and click the generate button
-THEN One potential drink option will appear at a time
-WHEN I find the drink I want
-THEN I save my selection
+WHEN I select my ingredient preference
+THEN a drink option will appear
+WHEN I click the next button
+THEN I am presented with suggested meal pairings based on my previous selection and a list of ingredients options for what I want my MEAL to include 
+WHEN I select my ingredient preference
+THEN a meal option will appear
+WHEN I click the next button
+THEN I am presented with suggested Netflix genre pairings based on and my previous selection and a list of genre options for what I want my movie to be
+WHEN I select my genre preference
+THEN a movie option will appear
 WHEN I move on to the next step
-THEN I am presented with a list of ingredients options for what I want my MEAL to include
-WHEN I save my preference and click the generate button
-THEN One potential meal option will appear at a time
-WHEN I find the meal I want
-THEN I save my selection
-WHEN I move on to the next step
-THEN I am presented with a list of Netflix genres for what I want my movie to be
-WHEN I save my genre preference and click the generate button
-THEN One potential movie option will appear at a time
-WHEN I find the movie I want
-THEN I save my selection
-WHEN I move on to the next step
-THEN three components of my Night-In selections are compiled and shown to me as a title, photo and link to find
+THEN I am presented with curated advice from the experts based on my selections along with the three components of my Night-In selections
 ```
-
-## WIREFRAME
-​
-Three search boxes are on the page, will appear sequentially. 
-These search boxes are each tied to an API (Food DB, Drink DB, Netfliox/VideoDB)
-When the user enters a search, FIVE results are retried to a local list 
-When a select is made, the user continues to the next step, until all the events are made. 
-On the last page, the results will be displayed on the DOM. 
-​
-​
-- Notes - Make Sure:
-- Responsive Design
-- Bulma CSS
-​
-​
-### DIV 1 
-- Endpoint: cocktailDB
-- Button: [pick an alcohol, N/A option?]
-- Return:[
-    * name of the drink
-    * picture of the drink
-    ]
-    
-### DIV 2
-- Endpoint: mealDB 
-- Button: Category [Vegetarian, Seafood, Italian, etc. etc. etc. ]
-- Return: [TBD
-    * name of recipe
-    * picture of recipe
-]
-​
-### DIV 3
-- Endpoint: Uncogs
-- Button: [pick a genre]
-- Return: [
-    * TBD title?
-    * TBD poster?
-    ]
-​
-## User Flow Diagram:
-​
-User is taken through 3 steps before the night-in trifecta is complete
-​
-### Cocktail-
-​
-User chooses 1 alcohol to include in their recipe search and saved the parameter
-User clicks button to show 1 recipe at a time
-When the user finds a recipe they want they can save it and move on to the next section
-​
-### Meal-
-​
-User chooses 1 ngredient to include in their recipe search and saved the parameter
-User clicks button to show 1 recipe at a time
-When the user finds a recipe they want they can save it and move on to the next section
-​
-​
-### Movie-
-​
-User chooses 1 genre to include in their movie search and saved the parameter
-User clicks button to show 1 movie at a time
-When the user finds a movie they want they can save it***
-​
-System combines the users selections to create a complete night-in itinerary.
-User can choose a name for their itinerary and save it locally.
-If desired user can return to home page to start the process again.
-Returning to the saved section will show any/all dates previously saved.
-
-
