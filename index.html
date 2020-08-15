@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.css">
   <link rel="stylesheet" href="style.css" />
   <link rel="shortcut icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css2?family=Kristi&family=Quicksand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kristi&family=Raleway&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
@@ -30,7 +30,7 @@
           <p class="subtitle" style="margin-top: 24px;">From 'Drinks' to 'Dinner and a Movie' ... our date <b>Night In</b> Experts are here help you curate a perfect Night In.
           </p>
           <button class="button glow-button is-danger is-large" id="start">Start planning your Night In!</button>
-
+          <br>
         </div>
 
         <!--Questions, Choices and Results for Drinks, Food and Movies.-->
@@ -55,7 +55,8 @@
 
               <!--Drink Results-->
               <div id="drink-results" class="is-hidden is-clearfix">
-                <div id="drink-name-display" class="text-display has-text-centered subtitle"></div>
+                <br>
+                <div id="drink-name-display" class="text-display has-text-centered subtitle class-kristi"></div>
                 <div class="image-box is-flex"><img id="drink-pic-display" class="pic image is-centered"></img></div>
                 <br>
                 <div class="nextButtonDiv">
@@ -89,7 +90,8 @@
 
               <!--Food Results-->
               <div id="food-results" class="is-hidden is-clearfix">
-                <div id="meal-name-display" class="text-display has-text-centered subtitle"></div>
+                <br>
+                <div id="meal-name-display" class="text-display has-text-centered subtitle class-kristi"></div>
                 <div class="image-box is-flex"><img id="meal-pic-display" class="pic image is-centered"></img></div>
                 <br>
                 <div class="nextButtonDiv">
@@ -124,7 +126,8 @@
 
               <!--Movie Results-->
               <div id="movie-results" class="is-hidden is-clearfix">
-                <div id="movie-name-display" class="text-display has-text-centered subtitle"></div>
+                <br>
+                <div id="movie-name-display" class="text-display has-text-centered subtitle class-kristi"></div>
                 <div class="image-box is-flex"><img id="movie-pic-display" class="pic image is-centered"></img></div>
                 <br>
                 <div class="nextButtonDiv">
@@ -142,15 +145,16 @@
         <!--Final Date Results Div-->
         <div id="end-screen" class="box is-hidden">
           <div class="is-fluid is-clearfix">
-            <h2 id="end-title" class="has-text-centered">Enjoy your night in!</h2>
+            <h2 id="end-title" class="has-text-centered results-header">Enjoy your night in!</h2>
 
 
             <div id="tagline-div box is-fuild image-box" class="box">
-              <div id="tagline-title" class="subtitle has-text-centered">Curated advice from our poorly-vetted stable of date night experts, based on your evening selections:
+              <br>
+              <div id="tagline-title" class="subtitle has-text-centered curated">Curated advice from our poorly-vetted stable of date night experts, based on your evening selections:
               </div>
-              <div id="tagline-content" class="has-text-centered"><i>"Be careful, <span id="drink-comment"></span>. Don't take that the wrong way.
+              <div id="tagline-content" class="has-text-centered curated"><i>"Be careful, <span id="drink-comment"></span>. Don't take that the wrong way.
                 Hopefully you like what you're drinking because, <span id="meal-comment"></span>. Other than that, should be a great meal. As for tonight's entertainment, get ready for <span
-                  id="movie-comment"></span>." - </i><strong>The Experts</strong></div>
+                  id="movie-comment"></span>."<br> - </i><strong style="color:#696969;">The Experts</strong></div>
             </div>
 
 
@@ -158,19 +162,19 @@
 
               <!--Drink Results-->
               <div id="final-drink-result" class="column is-one-third is-fluid box image-box">
-                <div id="final-drink-name-display" class="text-display has-text-centered subtitle"></div>
+                <div id="final-drink-name-display" class="text-display has-text-centered subtitle class-kristi"></div>
                 <div class="image-box is-flex"><img id="final-drink-pic-display" class="pic"></img></div>
               </div>
 
               <!--Food Results-->
               <div id="final-meal-result" class="column is-one-third is-fluid box image-box">
-                <div id="final-meal-name-display" class="text-display has-text-centered subtitle"></div>
+                <div id="final-meal-name-display" class="text-display has-text-centered subtitle class-kristi"></div>
                 <div class="image-box is-flex"><img id="final-meal-pic-display" class="pic"></img></div>
               </div>
 
               <!--Movie Results-->
               <div id="final-movie-result" class="column is-one-third is-fluid box image-box">
-                <div id="final-movie-name-display" class="text-display has-text-centered subtitle"></div>
+                <div id="final-movie-name-display" class="text-display has-text-centered subtitle class-kristi"></div>
                 <div class="image-box is-flex"><img id="final-movie-pic-display" class="pic"></img></div>
               </div>
 

@@ -1,11 +1,44 @@
 * {
-    font-family: 'Quicksand', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .title {
   font-family: 'Kristi', cursive;
   font-size: 60pt;
 }
+
+.results-header{
+  font-family: 'Kristi', cursive;
+  font-size: 60pt;
+}
+
+.class-kristi
+{font-family: 'Kristi', cursive;
+  font-size: 32pt;}
+
+.curated{
+  color: #696969;}
+
+  
+
+
+
+#food-question-title{
+  text-align: center;
+}
+
+#movie-question-title{
+  text-align: center;
+}
+
+#sugg{
+  text-align: center;
+}
+
+#suggestions{
+  text-align: center;
+}
+
 
 #end-title {
     font-family: 'Kristi', cursive;
