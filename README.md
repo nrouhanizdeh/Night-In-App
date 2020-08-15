@@ -62,4 +62,4 @@ THEN I am presented with curated advice from the experts based on my selections 
 ​
 ## Visualization of App Interface
 ​
-
+<img src="https://github.com/nrouhanizdeh/Night-In-App/blob/master/images/Night-In%20(5).gif?raw=true"></img>
