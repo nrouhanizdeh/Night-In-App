@@ -5,7 +5,7 @@ var drinks = {
     Tequila : ["15423", "15300", "16333", "16100", "16289", "11112", "11118", "13068", "17174", "16991", "17204", "11007", "16196", "17253", "178327", "16984", "12322", "12362", "178307", "12370", "13621", "14602", "17216", "17217", "16158"],
     Rum : ["16333", "17229", "14364", "17267", "17209", "17268", "178331", "178329", "178309", "178328", "17201", "15825", "13192", "16995", "16984", "12071", "14978", "12097", "178322", "14065", "17241"],
     Bourbon :  ["11021", "11147", "16447", "16987", "11580", "11602", "11604", "11008", "11766", "17206", "11786", "11001"],
-    Non_Alcoholic :  ["12560", "12562", "12862", "15106", "12710", "12564", "12708", "12654", "12656", "12658", "12572", "12730", "12732", "12734", "17108", "12890", "12736", "12668", "12768", "12670", "12672", "12674", "12712", "12954", "12738", "12770", "17176", "12688", "12720", "12714", "12690", "12698", "12696", "12692", "12694", "12702", "12704", "12716", "12774", "12776", "12744", "12746", "12748", "12618", "12718", "15092", "12630", "12750", "13032", "12780", "13036", "12722", "12724", "12782", "12784", "12786", "12726", "12728"]
+    "Non-Alcoholic" :  ["12560", "12562", "12862", "15106", "12710", "12564", "12708", "12654", "12656", "12658", "12572", "12730", "12732", "12734", "17108", "12890", "12736", "12668", "12768", "12670", "12672", "12674", "12712", "12954", "12738", "12770", "17176", "12688", "12720", "12714", "12690", "12698", "12696", "12692", "12694", "12702", "12704", "12716", "12774", "12776", "12744", "12746", "12748", "12618", "12718", "15092", "12630", "12750", "13032", "12780", "13036", "12722", "12724", "12782", "12784", "12786", "12726", "12728"]
 }
 
 var meals = {
@@ -32,7 +32,7 @@ var genres = { 	"Action": 28,
                 "Music": 10402,
                 "Mystery": 9648,
                 "Romance": 10749,
-                "Science Fiction": 878,
+                "SciFi": 878,
                 "TV Movie": 10770,
                 "Thriller": 53,
                 "War": 10752,
@@ -46,7 +46,7 @@ var drinkstwo = {
   Tequila : ["you are the one who decided tequila was a good idea. Don't look at me", "tequila is known to make people very ''tired''. Ya, let's go with ''tired''", "tequila can not- WE REPEAT: CANNOT- be trusted", " my friend. Try not to drink as many tequilas as last time. People still talk about that night. It was crazy"],
   Rum : ["Captain Jack Sparrow drinks rum and we all know what that guy is about", "we don't want your mother to know you drink rum", "this isn't Cancun, so easy on the rum. And tacos.", "rum can make you want to go to the beach and feel like a freakin' pirate"],
   Bourbon : ["bourbon is Ronye's drink of choice, and that guy is a stickler", "bourbon was the only thing that helped get us college (just the first semester of Junior year)", "bourbon makes the night a wild one and the next morning abrupt", "we never met a bourbon-drinker we didn't like. Except, like, all of our friends"],
-  Non_Alcoholic : ["sometimes a little booze makes bad movies better", "drinking too much water is.. actually a good thing", "actually don't be careful, you made a health drink choice", "not drinking can make things boring"],
+  "Non-Alcoholic" : ["sometimes a little booze makes bad movies better", "drinking too much water is.. actually a good thing", "actually don't be careful, you made a health drink choice", "not drinking can make things boring"],
   }
                             
 var mealstwo = {
