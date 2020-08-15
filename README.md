@@ -5,9 +5,9 @@ Now more than ever, people are spending more time at home.  As developers we wan
 ​
 
 ## Live Link to Deployed App
-
+​
 https://nrouhanizdeh.github.io/Night-In-App/
-
+​​
 
 ## Technologies Utilized 
 ​
@@ -28,17 +28,18 @@ https://api.themoviedb.org
 -Math random is used on lists of movie titles based on the users genre selection to generate a movie from the top 300 results.  
 -This ID is used in an API call to return the corresponding name and photo from the database.
 
-
-
-## User Story
-​
 ```
+​
+## User Story
+​​
+
 AS A person who can't or won't be going out for the night
 I WANT to see options for drink recipes, meal recipes and movies
 SO THAT I can curate aspects of a nice evening spent indoors
 ```
-
+​
 ## User Flow Diagram
+​
 ```
 GIVEN I am using the Night-In app to curate food, drink and entertainment for the evening
 WHEN I open the Night-In app
