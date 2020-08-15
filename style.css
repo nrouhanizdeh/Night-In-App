@@ -173,8 +173,8 @@ img {
       }
 
       .fade-in-start {
-        animation: fadeInStart ease 2s;
-        -webkit-animation: fadeInStart ease 2s;
+        animation: fadeInStart ease 1s;
+        -webkit-animation: fadeInStart ease 1s;
 
       }
     
@@ -279,7 +279,6 @@ img {
     100% {
       opacity:0;
     }
-
 
 
 
