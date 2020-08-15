@@ -60,7 +60,6 @@ button.button, input[type="submit"].button {
   }
 
 .transbox {
-  margin: 30px;
   background-color: #ffffff;
   border: 1px solid pink;
   opacity: 0.8;
