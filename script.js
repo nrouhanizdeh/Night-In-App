@@ -99,6 +99,7 @@ function startNightIn() {
 
 //Start button
 $("#start").on("click", function(){
+  $("#start-screen").hide();
   drinkDivEl.setAttribute("class", "box is-fluid fade-in");
   startButtonEl.setAttribute("class","button is-medium is-danger is-inverted")
   startButtonEl.innerHTML = "Night In planning in progress...";
@@ -264,7 +265,9 @@ $("#movie-next").click(function(){
   movieDivEl.setAttribute("class", "box is-fluid fade-out");
   movieIconEl.setAttribute("class","fas fa-check-circle fa-lg");
   endDivEl.setAttribute("class", "box is-fluid fade-in");
-
+  $("#drink-div-container").hide();
+  $("#food-div-container").hide();
+  $("#movie-div-container").hide();
 });
 
 
