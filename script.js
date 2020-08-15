@@ -70,6 +70,7 @@ var movietwo = {
                 }
 
 var startButtonEl = document.getElementById("start");
+
 var drinkDivEl = document.getElementById("drink-questions");
 var foodDivEl = document.getElementById("food-questions");
 var movieDivEl = document.getElementById("movie-questions");
@@ -83,6 +84,10 @@ var drinkChoicesDivEl = document.getElementById("drink-choices");
 var foodChoicesDivEl = document.getElementById("food-choices");
 var movieChoicesDivEl = document.getElementById("movie-choices");
 
+var drinkResultsDivEl = document.getElementById("drink-results");
+var foodResultsDivEl = document.getElementById("food-results");
+var movieResultsDivEl = document.getElementById("movie-results");
+
 var drinkNextBtn = document.getElementById("drink-next");
 var foodNextBtn = document.getElementById("food-next");
 var movieNextBtn = document.getElementById("movie-next");
@@ -90,6 +95,18 @@ var movieNextBtn = document.getElementById("movie-next");
 var drinkIconEl = document.getElementById("drinkIcon");
 var foodIconEl = document.getElementById("foodIcon");
 var movieIconEl = document.getElementById("movieIcon");
+
+var beefBtn = document.getElementById("butBeef");
+var chickenBtn = document.getElementById("butChicken");
+var porkBtn = document.getElementById("butPork");
+var seafoodBtn = document.getElementById("butSeadfood");
+var pastaBtn = document.getElementById("butPasta");
+var vegetarianBtn = document.getElementById("butVegetarian");
+var veganBtn = document.getElementById("butVegan");
+
+var foodSuggestion = document.getElementById("sugg");
+var movieSuggestion = document.getElementById("suggestions");
+
 
 function startNightIn() {
     // hide start screen
@@ -101,8 +118,7 @@ function startNightIn() {
 $("#start").on("click", function(){
   $("#start-screen").hide();
   drinkDivEl.setAttribute("class", "box is-fluid fade-in");
-  startButtonEl.setAttribute("class","button is-medium is-danger is-inverted")
-  startButtonEl.innerHTML = "Night In planning in progress...";
+  startButtonEl.setAttribute("class","button is-medium is-danger is-inverted fade-out")
 });
 
 
@@ -128,26 +144,44 @@ $(".drinkButton").on("click", function() {
         var drinkType=this.id;
 
         if (drinkType==="butGin"){
-            $("#pairings").text("Seafood & Vegetarian");
+          //$("#pairings").text("Seafood & Vegetarian");
+          $("#butBeef").attr("class","foodButton button is-success is-outlined");
+          $("#butVegetarian").attr("class","foodButton button is-success is-outlined");
         }
         if(drinkType==="butVodka"){
-            $("#pairings").text("Pork & Beef");
+            //$("#pairings").text("Pork & Beef");
+            $("#butPork").attr("class","foodButton button is-success is-outlined");
+            $("#butBeef").attr("class","foodButton button is-success is-outlined");
         }
         if (drinkType==="butTequila"){
-            $("#pairings").text("Seafood, Pork, Beef & Vegetarian");
+            //$("#pairings").text("Seafood, Pork, Beef & Vegetarian");
+            $("#butSeadfood").attr("class","foodButton button is-success is-outlined");
+            $("#butBeef").attr("class","foodButton button is-success is-outlined");
+            $("#butPork").attr("class","foodButton button is-success is-outlined");
+            $("#butVegetarian").attr("class","foodButton button is-success is-outlined");
         }
         if (drinkType==="butRum"){
-            $("#pairings").text("Beef, Chicken, Vegetarian, Seafood & Pork")
+            //$("#pairings").text("Beef, Chicken, Vegetarian, Seafood & Pork")
+            $("#butSeadfood").attr("class","foodButton button is-success is-outlined");
+            $("#butBeef").attr("class","foodButton button is-success is-outlined");
+            $("#butPork").attr("class","foodButton button is-success is-outlined");
+            $("#butVegetarian").attr("class","foodButton button is-success is-outlined");
+            $("#butChicken").attr("class","foodButton button is-success is-outlined");
         }
         if (drinkType==="butBourbon"){
-            $("#pairings").text("Steak, Pork & Pasta");
+            //$("#pairings").text("Steak, Pork & Pasta");
+            $("#butSteak").attr("class","foodButton button is-success is-outlined");
+            $("#butPork").attr("class","foodButton button is-success is-outlined");
+            $("#butPasta").attr("class","foodButton button is-success is-outlined");
         }
         if(drinkType==="butNon-alcoholic"){
-            $("#pairings").text("The world is your oyster!");
+            //$("#pairings").text("The world is your oyster!");
+            $("#butSeadfood").attr("class","foodButton button is-success is-outlined");
+            $("#butSteak").attr("class","foodButton button is-success is-outlined");
+            $("#butVegetarian").attr("class","foodButton button is-success is-outlined");
         }
 
-        $("#sugg").text("Based on your drink selection, we suggest the following meal pairings:");
-
+        $("#sugg").text("Based on your drink selection, our meal recommendation is in green.");
 
     $.ajax({
         url: drinkURL,
@@ -164,9 +198,11 @@ $(".drinkButton").on("click", function() {
       });
 
   //Hide the drinkQuestion and drinkChoices
-  drinkQuestionDivEl.setAttribute("class", "is-hidden");
+  drinkQuestionDivEl.setAttribute("class", "is-hidden fade-out");
   drinkChoicesDivEl.setAttribute("class", "choices btn-group is-hidden");
-
+  
+  //Reveal the drinkNext button
+  drinkResultsDivEl.setAttribute("class", "is-clearfix")
   //Reveal the drinkNext button
   drinkNextBtn.setAttribute("class", "nextButton button is-danger is-medium fade-in");
   });
@@ -193,6 +229,40 @@ $(".foodButton").on("click", function() {
 
     var mealURL = "https://www.themealdb.com/api/json/v1/1/lookup.php?i=" + mealUrlID;
 
+    var mealType=this.id;
+
+    if (mealType==="butBeef"){
+      //$("#pairings").text("Seafood & Vegetarian");
+      $("#butAction").attr("class","foodButton button is-info is-outlined");
+    }
+    if (mealType==="butChicken"){
+        //$("#pairings").text("Pork & Beef");
+        $("#butComedy").attr("class","foodButton button is-info is-outlined");
+    }
+    if (mealType==="butPork"){
+        //$("#pairings").text("Seafood, Pork, Beef & Vegetarian");
+        $("#butHorror").attr("class","foodButton button is-info is-outlined");
+    }
+    if (mealType==="butSeadfood"){
+        //$("#pairings").text("Beef, Chicken, Vegetarian, Seafood & Pork")
+        $("#butScifi").attr("class","foodButton button is-info is-outlined");
+    }
+    if (mealType==="butPasta"){
+        //$("#pairings").text("Steak, Pork & Pasta");
+        $("#butDrama").attr("class","foodButton button is-info is-outlined");
+    }
+    if(mealType==="butVegetarian"){
+        //$("#pairings").text("The world is your oyster!");
+        $("#butRomance").attr("class","foodButton button is-info is-outlined");
+    }
+
+    if(mealType==="butVegan"){
+      //$("#pairings").text("The world is your oyster!");
+      $("#butAdventure").attr("class","foodButton button is-success is-outlined");
+  }
+
+    $("#suggestions").text("Based on your drink & meal selections, our movie recommendation is in blue.");
+
     $.ajax({
         url: mealURL,
         method: "GET"
@@ -207,10 +277,12 @@ $(".foodButton").on("click", function() {
         $("#final-meal-pic-display").attr("src", mealPic);        
       });
 
-  //Hide the foodQuestion and foodChoices
+  //Hide the foodQuestion, foodChoices & foodSuggestionPrompt
   foodQuestionDivEl.setAttribute("class", "is-hidden");
   foodChoicesDivEl.setAttribute("class", "choices btn-group is-hidden");
+  foodSuggestion.setAttribute("class", "is-hidden");
 
+  foodResultsDivEl.setAttribute("class", "is-clearfix")
   //Reveal the foodNext button
   foodNextBtn.setAttribute("class", "nextButton button is-danger is-medium fade-in");
   });
@@ -255,6 +327,9 @@ $("#food-next").click(function(){
   //Hide the movieQuestion and movieChoices
   movieQuestionDivEl.setAttribute("class", "is-hidden");
   movieChoicesDivEl.setAttribute("class", "choices btn-group is-hidden");
+
+  movieSuggestion.setAttribute("class", "is-hidden");
+  movieResultsDivEl.setAttribute("class", "is-clearfix")
   //Reveal the movieNext button
   movieNextBtn.setAttribute("class", "nextButton button is-danger is-medium fade-in");
 
@@ -270,7 +345,9 @@ $("#movie-next").click(function(){
   $("#movie-div-container").hide();
 });
 
-
+$("#end-next").click(function(){
+  location.reload();
+});
 // be careful
 
 var ginComments = ["only snobs drink gin", "my uncle drank gin once and now he's a better person", "the song Bathtub Gin by Phish changed my life", "gin goes down smooth"];

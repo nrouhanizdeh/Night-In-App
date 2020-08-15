@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.css">
   <link rel="stylesheet" href="style.css" />
   <link rel="shortcut icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css2?family=Kristi&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kristi&family=Quicksand&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
@@ -18,16 +18,18 @@
 <body>
 
   <div class="hero is-fullheight" >
-    <div class="hero-body" style="background-image: url('./images/pexels-kaboompics-com-6289.jpg');" >
+    <div class="hero-body is-clearfix" style="background-image: url('./images/pexels-kaboompics-com-6289.jpg');" >
 
       <div id="question-container">
+
         <!--Night In landing page-->
-        <div id="start-screen" class="box has-text-centered is-fluid transbox">
+        <div id="start-screen" class="box has-text-centered is-fluid transbox fade-in-start">
 
           <h1 class="title">Night In</h1>
-          <p class="subtitle">From 'Drinks' to 'Dinner and a Movie' ... our date <b>Night In</b> Experts are here help you curate the perfect date Night In.
+
+          <p class="subtitle" style="margin-top: 24px;">From 'Drinks' to 'Dinner and a Movie' ... our date <b>Night In</b> Experts are here help you curate a perfect Night In.
           </p>
-          <button class="button is-medium is-danger" id="start">Start planning your Night In!</button>
+          <button class="button glow-button is-danger is-large" id="start">Start planning your Night In!</button>
 
         </div>
 
@@ -48,20 +50,21 @@
                 <button class="drinkButton button is-danger is-outlined" id="butTequila">Tequila</button>
                 <button class="drinkButton button is-danger is-outlined" id="butRum">Rum</button>
                 <button class="drinkButton button is-danger is-outlined" id="butBourbon">Bourbon</button>
-                <button class="drinkButton button is-danger is-outlined" id="butNon-alcoholic">Non_Alcoholic</button>
+                <button class="drinkButton button is-danger is-outlined" id="butNon-alcoholic">Non-Alcoholic</button>
               </div>
 
               <!--Drink Results-->
-              <div class="drink-results is-clearfix">
+              <div id="drink-results" class="is-hidden is-clearfix">
                 <div id="drink-name-display" class="text-display has-text-centered subtitle"></div>
                 <div class="image-box is-flex"><img id="drink-pic-display" class="pic image is-centered"></img></div>
                 <br>
-                <div class="nextButton">
-                  <button id="drink-next" class="nextButton button is-danger is-medium is-hidden">
+                <div class="nextButtonDiv">
+                  <button id="drink-next" class="nextButton button glow-button is-danger is-medium is-hidden">
                     <i id="drinkIcon" class="far fa-arrow-alt-circle-right fa-lg"></i>
                   </button>
                 </div>
               </div>
+
             </div>
           </div>
 
@@ -85,12 +88,12 @@
               </div>
 
               <!--Food Results-->
-              <div class="food-results is-clearfix">
+              <div id="food-results" class="is-hidden is-clearfix">
                 <div id="meal-name-display" class="text-display has-text-centered subtitle"></div>
                 <div class="image-box is-flex"><img id="meal-pic-display" class="pic image is-centered"></img></div>
                 <br>
                 <div class="nextButtonDiv">
-                  <button id="food-next" class="nextButton button is-danger is-inverted is-medium is-hidden">
+                  <button id="food-next" class="nextButton button glow-button is-danger is-inverted is-medium is-hidden">
                     <i id="foodIcon" class="far fa-arrow-alt-circle-right fa-lg"></i>
                   </button>
                 </div>
@@ -115,17 +118,17 @@
                 <button class="movieButton button is-danger is-outlined" id="butDrama">Drama</button>
                 <button class="movieButton button is-danger is-outlined" id="butHorror">Horror</button>
                 <button class="movieButton button is-danger is-outlined" id="butRomance">Romance</button>
-                <button class="movieButton button is-danger is-outlined" id="butScifi">Science Fiction</button>
+                <button class="movieButton button is-danger is-outlined" id="butScifi">SciFi</button>
               </div>
 
 
               <!--Movie Results-->
-              <div class="movie-results is-clearfix">
+              <div id="movie-results" class="is-hidden is-clearfix">
                 <div id="movie-name-display" class="text-display has-text-centered subtitle"></div>
                 <div class="image-box is-flex"><img id="movie-pic-display" class="pic image is-centered"></img></div>
                 <br>
                 <div class="nextButtonDiv">
-                  <button id="movie-next" class="nextButton button is-danger is-medium is-hidden">
+                  <button id="movie-next" class="nextButton button glow-button is-danger is-medium is-hidden">
                     <i id="movieIcon" class="far fa-arrow-alt-circle-right fa-lg"></i>
                   </button>
                 </div>
@@ -138,8 +141,8 @@
 
         <!--Final Date Results Div-->
         <div id="end-screen" class="box is-hidden">
-          <div class="is-fluid">
-            <h2 class="subtitle has-text-centered">Enjoy your night in!</h2>
+          <div class="is-fluid is-clearfix">
+            <h2 id="end-title" class="has-text-centered">Enjoy your night in!</h2>
 
 
             <div id="tagline-div box is-fuild image-box" class="box">
@@ -151,7 +154,7 @@
             </div>
 
 
-            <div class="columns is-multiline">
+            <div id="end-results-div" class="columns is-multiline">
 
               <!--Drink Results-->
               <div id="final-drink-result" class="column is-one-third is-fluid box image-box">
@@ -170,7 +173,18 @@
                 <div id="final-movie-name-display" class="text-display has-text-centered subtitle"></div>
                 <div class="image-box is-flex"><img id="final-movie-pic-display" class="pic"></img></div>
               </div>
+
             </div>
+
+            <div class="nextButtonDiv">
+              <div class="nextButton">
+              <button id="end-next" class="nextButton button glow-button is-danger is-medium">
+                Plan another Night In! <i id="endIcon" class="fas fa-redo-alt fa-lg"></i>
+              </button>
+            </div>
+            </div>
+
+
           </div>
 
         </div>
