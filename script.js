@@ -38,6 +38,36 @@ var genres = { 	"Action": 28,
                 "War": 10752,
                 "Western": 37
               }
+              
+var drinkstwo = {
+    Gin : ["only snobs drink gin", "my uncle drank gin once and now he's a better person", "the song Bathtub Gin by Phish changed my life", "gin goes down smooth"],
+    Vodka : ["you can't even really taste vodka", "vodka is the national drink of Russia", "some say the Polish secretly make good vodka", " you know what they say: a vodka a day is gross", "vodka takes no prisoners"],
+    Scotch : ["you can barely understand the Scottish", "scotch pairs nicely with golf", "don't confuse this kind of scotch with the tape", "scotch will put hair on your chest, (if you are a man)"],
+    Tequila : ["you are the one who decided tequila was a good idea", "tequila is known to make people very tired. Ya, let's go with tired", "tequila can not be trusted", "try not to drink as many tequilas as last time"],
+    Rum : ["Captain Jack Sparrow drinks rum and he's in bad shape", "does your mother know you drink rum", "this isn't Cancun, so easy on the rum", "rum can make you want to go to the beach"],
+    Bourbon : ["bouron will straight-up CHANGE you", "bourbon was the only thing that helped me finish college", "bourbon makes the night a wild one", "I never met a bourbon-drinker I didn't like"],
+    Non_Alcoholic : [""] ["sometimes a little booze makes bad movies better", "drinking too much water is.. actually a good thing", "actually don't be careful, you made a health drink choice", "not drinking can make things boring"],
+                }
+                
+var mealstwo = {
+    Beef : ["where's the beef", "cow meat is always gets me going", "I could eat beef all day", "beef puts me in a food coma"],
+    Chicken : ["chicken is a main food group", "the chicken you're eating and I were close friends", "I haven't had chicken for dinner since the Lincoln Administration", "it's certainly no BW3's"],
+    Pork : ["we are not sure what part of the pig this is from", "we caught this pig down the street a couple years ago", "pork was the first meal on the moon", "my family eats a whole pig a week"],
+    Seafood : ["seafood is always a little dicey at this place", "we're not sure which ocean this came from", "the last time I had seafood, I had to be rushed to the hospial", "this seafood smells super funky"],
+    Pasta : ["I've always wanted real pasta", "I don't think this pasta is fresh", "I came here for kick name and take pasta.. er.. something like that", "I saw the chef pick this pasta up off the floor"],
+    Vegetarian : ["these vegetables haven't been identified yet", "eating only vegetables will give you the runs", "these vegetables were hydronically grown, bro", "I thought I spotted some mold on the veggies"],
+    Vegan : ["this food smells like bark", "I don't know how my body will react to vegan", "scientists aren't sure what vegan even mean really", "going vegan is no longer hip"],
+                }
+                
+var movietwo = {
+    Action : ["some totally awesome action. YES!", "an action packed movie", "some awesome set pieces and bad acting", "another in your face flick"],
+    Adventure : ["an adventure (like Frodo)", "me getting really excited over here", "an epic adventure", "a timeless classic the whole family can enjoy"],
+    Comedy : ["a laugh-out-loud romp", "some mediocre jokes and lazy script", "the same comedy all over again", "a comedy that should have never been made"],
+    Drama : ["me crying like a baby", "a dramatic experience", "a cheesy drama where nobody wins", "drama, drama, drama"],
+    Horror : ["that jumpscare moment where you sh*t your pants", "a terrifying experience", "a masterclass in horror", "a movie that should have been made as a sequal to Scream"],
+    Romance : ["some soppy schlock starring a bunch of C-listers", "a completely shocking conclusion: they end up together", "another souless, depthless cringe-fest", "me crying like a baby because I love this movie"],
+    SciFi : ["a trip to space", "that far-out feeling", "a movie that will one day go down as the greatest science fiction film of the month it was released", "an awesome cameo by Obi-Wan-Kenobi"],
+                }
 
 var startButtonEl = document.getElementById("start");
 var drinkDivEl = document.getElementById("drink-questions");
@@ -67,6 +97,12 @@ $("#start").on("click", function(){
 
 //need the choice class
 $(".drinkButton").on("click", function() {
+
+    var drinkTags = drinkstwo[this.innerHTML];
+    var drinkTagsLength = drinkTags.length;
+    var tagWinner = drinkTags[Math.floor(drinkTagsLength*Math.random())];
+    var tagWinnerText = document.createTextNode(tagWinner);
+    document.getElementById("drink-comment").innerHTML = tagWinner
 
     var drinkIds = drinks[this.innerHTML];
     var drinklength = drinkIds.length;
@@ -129,6 +165,12 @@ $("#drink-next").click(function(){
 
 $(".foodButton").on("click", function() {
 
+  var mealTags = mealstwo[this.innerHTML];
+  var mealTagsLength = mealTags.length;
+  var tagWinner = mealTags[Math.floor(mealTagsLength*Math.random())];
+  var tagWinnerText = document.createTextNode(tagWinner);
+  document.getElementById("meal-comment").innerHTML = tagWinner
+
     var mealIds = meals[this.innerHTML];
     var meallength = mealIds.length;
 
@@ -163,6 +205,12 @@ $("#food-next").click(function(){
 
 
   $(".movieButton").on("click", function() {
+
+    var movieTags = movietwo[this.innerHTML];
+    var movieTagsLength = movieTags.length;
+    var tagWinner = movieTags[Math.floor(movieTagsLength*Math.random())];
+    var tagWinnerText = document.createTextNode(tagWinner);
+    document.getElementById("movie-comment").innerHTML = tagWinner
 
     var genresId = genres[this.innerHTML];
     // tmdb api returns 500 pages. we pick a random number from 0-300 (to be safe) and use as page number in the URL

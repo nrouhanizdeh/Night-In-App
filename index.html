@@ -15,37 +15,38 @@
 
 <body>
 
-    <div class="hero">
+  <div class="hero">
     <div class="hero-body">
 
-    <div id="question-container">
-      <!--Night In landing page-->
-      <div id="start-screen" class="box has-text-centered is-fluid">
+      <div id="question-container">
+        <!--Night In landing page-->
+        <div id="start-screen" class="box has-text-centered is-fluid">
 
-        <h1 class="title">Night In</h1>
-        <p class="subtitle">From Drinks to Dinner & a Movie… we’re happy to help you curate the perfect date Night In.</p>
-        <button class="button is-medium is-danger" id="start">Start planning your Night In!</button>
+          <h1 class="title">Night In</h1>
+          <p class="subtitle">From Drinks to Dinner & a Movie… we’re happy to help you curate the perfect date Night In.
+          </p>
+          <button class="button is-medium is-danger" id="start">Start planning your Night In!</button>
 
-      </div>
+        </div>
 
-      <!--Questions, Choices and Results for Drinks, Food and Movies.-->
-      <div id="questionsDiv" class="columns is-multiline is-fluid">
+        <!--Questions, Choices and Results for Drinks, Food and Movies.-->
+        <div id="questionsDiv" class="columns is-multiline is-fluid">
 
-        <!--Drink Question-->
-        <div id="drink-div-container" class="column is-one-third">
-          <div id="drink-questions" class="box is-fluid is-hidden">
-            <h2 id="drink-question-title">What do you feel like drinking?</h2>
+          <!--Drink Question-->
+          <div id="drink-div-container" class="column is-one-third">
+            <div id="drink-questions" class="box is-fluid is-hidden">
+              <h2 id="drink-question-title">What do you feel like drinking?</h2>
 
-            <!--Drink Choices-->
-            <div id="drink-choices" class="choices btn-group">
-              <button class="drinkButton button is-danger is-outlined" id="butGin">Gin</button>
-              <button class="drinkButton button is-danger is-outlined" id="butVodka">Vodka</button>
-              <button class="drinkButton button is-danger is-outlined" id="butScotch">Scotch</button>
-              <button class="drinkButton button is-danger is-outlined" id="butTequila">Tequila</button>
-              <button class="drinkButton button is-danger is-outlined" id="butRum">Rum</button>
-              <button class="drinkButton button is-danger is-outlined" id="butBourbon">Bourbon</button>
-              <button class="drinkButton button is-danger is-outlined" id="butNon-alcoholic">Non_Alcoholic</button>
-            </div>
+              <!--Drink Choices-->
+              <div id="drink-choices" class="choices btn-group">
+                <button class="drinkButton button is-danger is-outlined" id="butGin">Gin</button>
+                <button class="drinkButton button is-danger is-outlined" id="butVodka">Vodka</button>
+                <button class="drinkButton button is-danger is-outlined" id="butScotch">Scotch</button>
+                <button class="drinkButton button is-danger is-outlined" id="butTequila">Tequila</button>
+                <button class="drinkButton button is-danger is-outlined" id="butRum">Rum</button>
+                <button class="drinkButton button is-danger is-outlined" id="butBourbon">Bourbon</button>
+                <button class="drinkButton button is-danger is-outlined" id="butNon-alcoholic">Non_Alcoholic</button>
+              </div>
 
               <!--Drink Results-->
               <div class="drink-results is-clearfix">
@@ -59,61 +60,62 @@
                 </div>
               </div>
 
-            
-          </div>
-        </div>
 
-        <!--Food Question-->
-        <div id="food-div-container" class="column is-one-third">
-          <div id="food-questions" class="box is-fluid is-hidden">
-            <h2 id="food-question-title">What do you feel like eating?</h2>
-            <div id="sugg"></div><div id="pairings"></div>
-            
-
-            <!--Food Choices-->
-            <div id="food-choices" class="choices btn-group">
-              <button class="foodButton button is-danger is-outlined" id="butBeef">Beef</button>
-              <button class="foodButton button is-danger is-outlined" id="butChicken">Chicken</button>
-              <button class="foodButton button is-danger is-outlined" id="butPork">Pork</button>
-              <button class="foodButton button is-danger is-outlined" id="butSeadfood">Seafood</button>
-              <button class="foodButton button is-danger is-outlined" id="butPasta">Pasta</button>
-              <button class="foodButton button is-danger is-outlined" id="butVegetarian">Vegetarian</button>
-              <button class="foodButton button is-danger is-outlined" id="butVegan">Vegan</button>
             </div>
+          </div>
+
+          <!--Food Question-->
+          <div id="food-div-container" class="column is-one-third">
+            <div id="food-questions" class="box is-fluid is-hidden">
+              <h2 id="food-question-title">What do you feel like eating?</h2>
+              <div id="sugg"></div>
+              <div id="pairings"></div>
+
+
+              <!--Food Choices-->
+              <div id="food-choices" class="choices btn-group">
+                <button class="foodButton button is-danger is-outlined" id="butBeef">Beef</button>
+                <button class="foodButton button is-danger is-outlined" id="butChicken">Chicken</button>
+                <button class="foodButton button is-danger is-outlined" id="butPork">Pork</button>
+                <button class="foodButton button is-danger is-outlined" id="butSeadfood">Seafood</button>
+                <button class="foodButton button is-danger is-outlined" id="butPasta">Pasta</button>
+                <button class="foodButton button is-danger is-outlined" id="butVegetarian">Vegetarian</button>
+                <button class="foodButton button is-danger is-outlined" id="butVegan">Vegan</button>
+              </div>
 
               <!--Food Results-->
               <div class="food-results is-clearfix">
                 <div id="meal-name-display" class="text-display has-text-centered subtitle"></div>
                 <div class="image-box is-flex"><img id="meal-pic-display" class="pic image is-centered"></img></div>
-                  <br>
-                  <div class="nextButtonDiv">
-                    <button id="food-next" class="nextButton button is-danger is-inverted is-medium is-hidden">
-                      <i id="foodIcon" class="far fa-arrow-alt-circle-right fa-lg"></i>
-                    </button>
-                  </div>
+                <br>
+                <div class="nextButtonDiv">
+                  <button id="food-next" class="nextButton button is-danger is-inverted is-medium is-hidden">
+                    <i id="foodIcon" class="far fa-arrow-alt-circle-right fa-lg"></i>
+                  </button>
+                </div>
               </div>
 
+            </div>
           </div>
-        </div>
 
-        <!--Movie Question-->
-        <div id="movie-div-container" class="column is-one-third">
-          <div id="movie-questions" class="box is-fluid is-hidden">
-            <h2 id="movie-question-title">What type of movie sounds good?</h2>
-            <div id="suggestions"></div>
+          <!--Movie Question-->
+          <div id="movie-div-container" class="column is-one-third">
+            <div id="movie-questions" class="box is-fluid is-hidden">
+              <h2 id="movie-question-title">What type of movie sounds good?</h2>
+              <div id="suggestions"></div>
               <div id="food-choices" class="choices"></div>
 
-            <!--Movie Choices-->
-            <div id="movie-choices" class="choices btn-group">
-              
-              <button class="movieButton button is-danger is-outlined" id="butAction">Action</button>
-              <button class="movieButton button is-danger is-outlined" id="butAdventure">Adventure</button>
-              <button class="movieButton button is-danger is-outlined" id="butComedy">Comedy</button>
-              <button class="movieButton button is-danger is-outlined" id="butDrama">Drama</button>
-              <button class="movieButton button is-danger is-outlined" id="butHorror">Horror</button>
-              <button class="movieButton button is-danger is-outlined" id="butRomance">Romance</button>
-              <button class="movieButton button is-danger is-outlined" id="butScifi">Science Fiction</button>
-            </div>
+              <!--Movie Choices-->
+              <div id="movie-choices" class="choices btn-group">
+
+                <button class="movieButton button is-danger is-outlined" id="butAction">Action</button>
+                <button class="movieButton button is-danger is-outlined" id="butAdventure">Adventure</button>
+                <button class="movieButton button is-danger is-outlined" id="butComedy">Comedy</button>
+                <button class="movieButton button is-danger is-outlined" id="butDrama">Drama</button>
+                <button class="movieButton button is-danger is-outlined" id="butHorror">Horror</button>
+                <button class="movieButton button is-danger is-outlined" id="butRomance">Romance</button>
+                <button class="movieButton button is-danger is-outlined" id="butScifi">Science Fiction</button>
+              </div>
 
 
               <!--Movie Results-->
@@ -125,52 +127,59 @@
                   <button id="movie-next" class="nextButton button is-danger is-medium is-hidden">
                     <i id="movieIcon" class="far fa-arrow-alt-circle-right fa-lg"></i>
                   </button>
-                  </div>
+                </div>
               </div>
 
+            </div>
           </div>
+
         </div>
 
-    </div>
+        <!--Final Date Results Div-->
+        <div id="end-screen" class="box is-hidden">
+          <div class="is-fluid">
+            <h2 class="subtitle has-text-centered">Enjoy your night in!</h2>
 
-    <!--Final Date Results Div-->
-    <div id="end-screen" class="box is-hidden">
-      <div  class="is-fluid">
-        <h2 class="subtitle has-text-centered">Enjoy your night in!</h2>
-          
-          <div class="columns is-multiline">
-            
-            <!--Drink Results-->
-            <div id="final-drink-result" class="column is-one-third is-fluid box image-box">
-              <div id="final-drink-name-display" class="text-display has-text-centered subtitle"></div>
-              <img id="final-drink-pic-display" class="pic"></img>
-            </div>
-            
-            <!--Food Results-->
-            <div id="final-meal-result" class="column is-one-third is-fluid box image-box">
-              <div id="final-meal-name-display" class="text-display has-text-centered subtitle"></div>
-              <img id="final-meal-pic-display" class="pic"></img>
+
+            <div id="tagline-div box is-fuild image-box" class="box">
+              <div id="tagline-title" class="subtitle has-text-centered">Advice from the experts, based on your evening:
+              </div>
+              <div id="tagline-content" class="has-text-centered"> "Be careful, <span id="drink-comment"></span>.
+                Hopefully
+                you like what you're drinking because, <span id="meal-comment"></span>. Get ready for <span
+                  id="movie-comment"></span>." - The Experts</div>
             </div>
 
-            <!--Movie Results-->
-            <div id="final-movie-result" class="column is-one-third is-fluid box image-box">
-              <div id="final-movie-name-display" class="text-display has-text-centered subtitle"></div>
-              <img id="final-movie-pic-display" class="pic"></img>
-            </div>
-            
-            <!-- Tagline Results -->
-            <div id="tagline-div box image-box">
-              <div id="tagline-title" class="subtitle has-text-centered">Advice from the experts, based on your evening:</div>
-              <p id="tagline-content has-text-centered">"Be careful, <span id="drink-comment"></span>. Hopefully you like what you're drinking because, <span id="meal-comment"></span>. Get ready for <span id="movie-comment"></span>." - The Experts</p>
-            
 
+            <div class="columns is-multiline">
+
+              <!--Drink Results-->
+              <div id="final-drink-result" class="column is-one-third is-fluid box image-box">
+                <div id="final-drink-name-display" class="text-display has-text-centered subtitle"></div>
+                <img id="final-drink-pic-display" class="pic"></img>
+              </div>
+
+              <!--Food Results-->
+              <div id="final-meal-result" class="column is-one-third is-fluid box image-box">
+                <div id="final-meal-name-display" class="text-display has-text-centered subtitle"></div>
+                <img id="final-meal-pic-display" class="pic"></img>
+              </div>
+
+              <!--Movie Results-->
+              <div id="final-movie-result" class="column is-one-third is-fluid box image-box">
+                <div id="final-movie-name-display" class="text-display has-text-centered subtitle"></div>
+                <img id="final-movie-pic-display" class="pic"></img>
+              </div>
+            </div>
           </div>
+
+        </div>
+
+
+
       </div>
     </div>
-    
   </div>
-  </div>
-</div>
   <script src="script.js"></script>
 </body>
 
