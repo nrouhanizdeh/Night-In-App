@@ -229,6 +229,40 @@ $(".foodButton").on("click", function() {
 
     var mealURL = "https://www.themealdb.com/api/json/v1/1/lookup.php?i=" + mealUrlID;
 
+    var mealType=this.id;
+
+    if (mealType==="butBeef"){
+      //$("#pairings").text("Seafood & Vegetarian");
+      $("#butAction").attr("class","foodButton button is-info is-outlined");
+    }
+    if (mealType==="butChicken"){
+        //$("#pairings").text("Pork & Beef");
+        $("#butComedy").attr("class","foodButton button is-info is-outlined");
+    }
+    if (mealType==="butPork"){
+        //$("#pairings").text("Seafood, Pork, Beef & Vegetarian");
+        $("#butHorror").attr("class","foodButton button is-info is-outlined");
+    }
+    if (mealType==="butSeadfood"){
+        //$("#pairings").text("Beef, Chicken, Vegetarian, Seafood & Pork")
+        $("#butScifi").attr("class","foodButton button is-info is-outlined");
+    }
+    if (mealType==="butPasta"){
+        //$("#pairings").text("Steak, Pork & Pasta");
+        $("#butDrama").attr("class","foodButton button is-info is-outlined");
+    }
+    if(mealType==="butVegetarian"){
+        //$("#pairings").text("The world is your oyster!");
+        $("#butRomance").attr("class","foodButton button is-info is-outlined");
+    }
+
+    if(mealType==="butVegan"){
+      //$("#pairings").text("The world is your oyster!");
+      $("#butAdventure").attr("class","foodButton button is-success is-outlined");
+  }
+
+    $("#suggestions").text("Based on your drink & meal selections, our movie recommendation is in blue.");
+
     $.ajax({
         url: mealURL,
         method: "GET"
@@ -294,6 +328,7 @@ $("#food-next").click(function(){
   movieQuestionDivEl.setAttribute("class", "is-hidden");
   movieChoicesDivEl.setAttribute("class", "choices btn-group is-hidden");
 
+  movieSuggestion.setAttribute("class", "is-hidden");
   movieResultsDivEl.setAttribute("class", "is-clearfix")
   //Reveal the movieNext button
   movieNextBtn.setAttribute("class", "nextButton button is-danger is-medium fade-in");

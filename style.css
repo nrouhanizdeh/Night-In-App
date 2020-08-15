@@ -16,6 +16,15 @@
     margin-bottom: 30px;
 }
 
+#start-screen:hover {
+    opacity:1;
+}
+
+.glow-button:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px hsl(348, 100%, 61%);
+  }
+
 .transbox {
   margin: 30px;
   background-color: #ffffff;
