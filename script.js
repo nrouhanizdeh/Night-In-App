@@ -39,38 +39,39 @@ var genres = { 	"Action": 28,
                 "Western": 37
               }
               
-var drinkstwo = {
-  Gin : ["we feel only snobs drink gin on Dinner and a Movie night", "one of our uncles drank gin once and now he's on a reality TV show (It's actually really sad)", "the transcendent jam ''Bathtub Gin'' by the band Phish changed my life. Twice", "gin goes down smooth on nights like these. Ow. Ow"],
-  Vodka : ["when you reach a certain point, you can't even really taste the vodka", "vodka is the national drink of Russia and our office Christmas Party", "some say the Polish secretly make the best vodka, but we're only saying that because we like pieroghis", " you know what they say: a vodka a day is.... actually kind of gross", "it's not the vodka that gets you. It's going too far with the mixers"],
-  Scotch : ["after about four fingers of Scotch, the thick Scottish accent just melts away", "a nice Scotch pairs nicely with the exceedingly frustrating game of golf", "don't confuse this kind of scotch with the tape. Two totally different things", "our granfathers used to say ''Scotch will put hair on your chest''. Funny, they only said that to their grandsons, and not their granddaughters"],
-  Tequila : ["you are the one who decided tequila was a good idea. Don't look at me", "tequila is known to make people very ''tired''. Ya, let's go with ''tired''", "tequila can not- WE REPEAT: CANNOT- be trusted", " my friend. Try not to drink as many tequilas as last time. People still talk about that night. It was crazy"],
-  Rum : ["Captain Jack Sparrow drinks rum and we all know what that guy is about", "we don't want your mother to know you drink rum", "this isn't Cancun, so easy on the rum. And tacos.", "rum can make you want to go to the beach and feel like a freakin' pirate"],
-  Bourbon : ["bourbon is Ronye's drink of choice, and that guy is a stickler", "bourbon was the only thing that helped get us college (just the first semester of Junior year)", "bourbon makes the night a wild one and the next morning abrupt", "we never met a bourbon-drinker we didn't like. Except, like, all of our friends"],
-  "Non-Alcoholic" : ["sometimes a little booze makes bad movies better", "drinking too much water is.. actually a good thing", "actually don't be careful, you made a health drink choice", "not drinking can make things boring"],
-  }
-                            
-var mealstwo = {
-  Beef : ["we've been looking and we can't seem to find it, so we'll ask you: Where's the beef", "cow meat is recommended by 9 of out 10 dentists", "we took a poll and we could eat beef all day", "an aggresive night of beef puts me in the deepest of food comas"],
-  Chicken : ["chicken is a totally main food group", "the chicken you're eating and was a close friend of ours", "we haven't had chicken this good since the Lincoln Administration. It's hard to come by around our office", "it's certainly no BW3's, but it will do"],
-  Pork : ["we are not sure what part of the pig this is from", "we caught this pig down the street a couple years ago", "pork was the first meal on the moon", "my family eats a whole pig a week"],
-  Seafood : ["seafood is always a little dicey at this place", "we're not sure which ocean this came from", "the last time we had seafood, we all had to be rushed to the hospial", "this seafood smells super funky"],
-  Pasta : ["we've always wanted ''real'' pasta, but we are not sure this qualifies", "We gave it some thought, and we don't think this pasta is fresh", "We came here for kick names and take pasta.. or.. ya know.. something like that", "we saw the chef pick this pasta up off the floor and put it right back on the plate"],
-  Vegetarian : ["we can't say for sure these vegetables have been identified yet", "eating only vegetables will give you the craziest runs. Hydrate", "these vegetables were like, totally, hydronically grown, man. So crunchy", "We didn't want to say anything til now, but we spotted some mold on the veggies just before your started eating them. Too late now"],
-  Vegan : ["this food smells like tree bark", "we don't know how our body will react to vegan, but we've heard the war stories", "scientists aren't sure what ''vegan'' even mean really", "going vegan is no longer hip, you are just feeding a tied trend"],
-  }
-                            
-var movietwo = {
-    Action : ["some totally awesome action. YES!", "an action packed movie with limited acting skills", "some awesome set pieces and some God-awful acting", "another in-your-face flick where the rugged hero saves the day in the end (and gets the girl)"],
-    Adventure : ["'..an adventure!!!' - Frodo Baggins, c. Middle Earth 1219)", "us getting a little upset we were invited cause this is a great adventure flick", "an mildly-epic adventure", "a timeless classic the whole family can enjoy. Or just play with their phones the whole time"],
-    Comedy : ["a laugh-out-loud romp though a low budget disaterpiece", "some mediocre jokes, lazy script and dimwit leads", "the same comedy all over again. And again", "a comedy that should have never been made"],
-    Drama : ["us crying like a baby, cause this hits us right in the feels", "a dramatic experience that you will forget 20 minutes after the credits roll", "a cheesy drama where nobody wins and everyone loses", "''Drama'', ''Drama'', ''Drama''"],
-    Horror : ["that jumpscare moment where you sh*t your pants", "a terrifying experience", "a masterclass in horror", "a movie that should have been made as a sequal to Scream"],
-    Romance : ["some soppy schlock starring a bunch of C-listers who are on their second stint of rehab", "a completely shocking conclusion: they end up together. 'Wow'", "another souless, depthless cringe-fest that you'll regret watching", "us crying like a baby because WE FREAKING LOVE THIS MOVIE"],
-    SciFi : ["a trip to space", "that far-out feeling", "a movie that will one day go down as the greatest science fiction film (of the month it was released)", "an awesome cameo by Obi-Wan-Kenobi"],
-  }
+              var drinkstwo = {
+                Gin : ["we feel only snobs drink gin on Dinner and a Movie night", "one of our uncles drank gin once and now he's on a reality TV show (It's actually really sad)", "the transcendent jam ''Bathtub Gin'' by the band Phish changed my life. Twice", "gin goes down smooth on nights like these. Ow. Ow"],
+                Vodka : ["when you reach a certain point, you can't even really taste the vodka", "vodka is the national drink of Russia and our office Christmas Party", "some say the Polish secretly make the best vodka, but we're only saying that because we like pieroghis", " you know what they say: a vodka a day is.... actually kind of gross", "it's not the vodka that gets you. It's going too far with the mixers"],
+                Scotch : ["after about four fingers of Scotch, the thick Scottish accent just melts away", "a nice Scotch pairs nicely with the exceedingly frustrating game of golf", "don't confuse this kind of scotch with the tape. Two totally different things", "our granfathers used to say ''Scotch will put hair on your chest''. Funny, they only said that to their grandsons, and not their granddaughters"],
+                Tequila : ["you are the one who decided tequila was a good idea. Don't look at me", "tequila is known to make people very ''tired''. Ya, let's go with ''tired''", "tequila can not- WE REPEAT: CANNOT- be trusted", " my friend. Try not to drink as many tequilas as last time. People still talk about that night. It was crazy"],
+                Rum : ["Captain Jack Sparrow drinks rum and we all know what that guy is about", "we don't want your mother to know you drink rum", "this isn't Cancun, so easy on the rum. And tacos", "rum can make you want to go to the beach and feel like a freakin' pirate"],
+                Bourbon : ["bourbon is Ronye's drink of choice, and that guy is a stickler", "bourbon was the only thing that helped get us college (just the first semester of Junior year)", "bourbon makes the night a wild one and the next morning abrupt", "we never met a bourbon-drinker we didn't like. Except, like, all of our friends"],
+                Non_Alcoholic : ["sometimes a little booze makes bad movies better", "drinking too much water is.. actually a good thing", "actually don't be careful, you made a health drink choice", "not drinking can make things boring"],
+                }
+                                          
+              var mealstwo = {
+                Beef : ["we've been looking and we can't seem to find it, so we'll ask you: Where's the beef", "cow meat is recommended by 9 of out 10 dentists", "we took a poll and we could eat beef all day", "an aggresive night of beef puts me in the deepest of food comas"],
+                Chicken : ["chicken is a totally main food group", "the chicken you're eating and was a close friend of ours", "we haven't had chicken this good since the Lincoln Administration. It's hard to come by around our office", "it's certainly no BW3's, but it will do"],
+                Pork : ["we are not sure what part of the pig this is from", "we caught this pig down the street a couple years ago", "pork was the first meal on the moon", "my family eats a whole pig a week"],
+                Seafood : ["seafood is always a little dicey at this place", "we're not sure which ocean this came from", "the last time we had seafood, we all had to be rushed to the hospial", "this seafood smells super funky"],
+                Pasta : ["we've always wanted ''real'' pasta, but we are not sure this qualifies", "We gave it some thought, and we don't think this pasta is fresh", "We came here for kick names and take pasta.. or.. ya know.. something like that", "we saw the chef pick this pasta up off the floor and put it right back on the plate"],
+                Vegetarian : ["we can't say for sure these vegetables have been identified yet", "eating only vegetables will give you the craziest runs. Hydrate", "these vegetables were like, totally, hydronically grown, man. So crunchy", "We didn't want to say anything til now, but we spotted some mold on the veggies just before your started eating them. Too late now"],
+                Vegan : ["this food smells like tree bark", "we don't know how our body will react to vegan, but we've heard the war stories", "scientists aren't sure what ''vegan'' even mean really", "going vegan is no longer hip, you are just feeding a tied trend"],
+                }
+                                          
+              var movietwo = {
+                  Action : ["some totally awesome action. YES!", "an action packed movie with limited acting skills", "some awesome set pieces and some God-awful acting", "another in-your-face flick where the rugged hero saves the day in the end (and gets the girl)"],
+                  Adventure : ["'..an adventure!!!' - Frodo Baggins, c. Middle Earth 1219)", "us getting a little upset we were invited cause this is a great adventure flick", "an mildly-epic adventure", "a timeless classic the whole family can enjoy. Or just play with their phones the whole time"],
+                  Comedy : ["a laugh-out-loud romp though a low budget disaterpiece", "some mediocre jokes, lazy script and dimwit leads", "the same comedy all over again. And again", "a comedy that should have never been made"],
+                  Drama : ["us crying like a baby, cause this hits us right in the feels", "a dramatic experience that you will forget 20 minutes after the credits roll", "a cheesy drama where nobody wins and everyone loses", "''Drama'', ''Drama'', ''Drama''"],
+                  Horror : ["that jumpscare moment where you sh*t your pants", "a terrifying experience", "a masterclass in horror", "a movie that should have been made as a sequal to Scream"],
+                  Romance : ["some soppy schlock starring a bunch of C-listers who are on their second stint of rehab", "a completely shocking conclusion: they end up together. 'Wow'", "another souless, depthless cringe-fest that you'll regret watching", "us crying like a baby because WE FREAKING LOVE THIS MOVIE"],
+                  SciFi : ["a trip to space", "that far-out feeling", "a movie that will one day go down as the greatest science fiction film (of the month it was released)", "an awesome cameo by Obi-Wan-Kenobi"],
+                }
 
 var leadcomment = ["Be careful, ", "We hate to break it to you but, ", "At first we were not sure where you were going with this but, ", "Wow, ", "We hope you are sitting down because, "];
-var secondcomment =["Hopefully you like you drink choice, since ", "You might want to pour yourself another because ", "You are off to a pretty good start, but don't forget "];
+var secondcomment =[". Hopefully you like you drink choice, since ", ". You might want to pour yourself another because ", ". You are off to a pretty good start, but don't forget "];
+var thirdcomment = [". What a great drink and dinner pairing", ". The food should be good, but I hear the service is pretty awful", ". We don't expect you to be able to finish the whole plate", ". At this point, you are probably wishing you ordered take out"];
 
 var startButtonEl = document.getElementById("start");
 
@@ -132,13 +133,16 @@ $(".drinkButton").on("click", function() {
     var drinkTagsLength = drinkTags.length;
     var leadcommentLength = leadcomment.length;
     var secondcommentLength = secondcomment.length;
+    var thirdcommentLength = thirdcomment.length;
     var tagWinner = drinkTags[Math.floor(drinkTagsLength*Math.random())];
     var commentWinner = leadcomment[Math.floor(leadcommentLength*Math.random())];
     var comment2Winner = secondcomment[Math.floor(secondcommentLength*Math.random())];
+    var comment3Winner = thirdcomment[Math.floor(thirdcommentLength*Math.random())];
     var tagWinnerText = document.createTextNode(tagWinner);
     document.getElementById("drink-comment").innerHTML = tagWinner
     document.getElementById("lead-comment").innerHTML = commentWinner;
     document.getElementById("second-comment").innerHTML = comment2Winner;
+    document.getElementById("third-comment").innerHTML = comment3Winner;
 
 
     var drinkIds = drinks[this.innerHTML];
