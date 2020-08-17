@@ -61,7 +61,7 @@ var mealstwo = {
                                                         
 var movietwo = {
   Action : ["some totally awesome action. YES!", "an action packed movie with limited acting skills", "some awesome set pieces and some God-awful acting", "another in-your-face flick where the rugged hero saves the day in the end (and gets the girl)"],
-  Adventure : ["'..an adventure!!!' - Frodo Baggins, c. Middle Earth 1219)", "us getting a little upset we were invited cause this is a great adventure flick", "an mildly-epic adventure", "a timeless classic the whole family can enjoy. Or just play with their phones the whole time"],
+  Adventure : ["'..an adventure!!!' - Frodo Baggins, c. Middle Earth 1219", "us getting a little upset we were invited cause this is a great adventure flick", "an mildly-epic adventure", "a timeless classic the whole family can enjoy. Or just play with their phones the whole time"],
   Comedy : ["a laugh-out-loud romp though a low budget disaterpiece", "some mediocre jokes, lazy script and dimwit leads", "the same comedy all over again. And again", "a comedy that should have never been made"],
   Drama : ["us crying like a baby, cause this hits us right in the feels", "a dramatic experience that you will forget 20 minutes after the credits roll", "a cheesy drama where nobody wins and everyone loses", "''Drama'', ''Drama'', ''Drama''"],
   Horror : ["that jumpscare moment where you sh*t your pants", "a terrifying experience", "a masterclass in horror", "a movie that should have been made as a sequal to Scream"],
@@ -70,7 +70,7 @@ var movietwo = {
   }
               
               var leadcomment = ["Be careful, ", "We hate to break it to you but, ", "At first we were not sure where you were going with this but, ", "Wow, ", "We hope you are sitting down because, "];
-              var secondcomment =[". Hopefully you like you drink choice, since ", ". You might want to pour yourself another because ", ". You are off to a pretty good start, but don't forget "];
+              var secondcomment =[". Hopefully you like your drink choice, since ", ". You might want to pour yourself another because ", ". You are off to a pretty good start, but don't forget "];
               var thirdcomment = [". What a great drink and dinner pairing", ". The food should be good, but I hear the service is pretty awful", ". We don't expect you to be able to finish the whole plate", ". At this point, you are probably wishing you ordered take out"];
 
 var startButtonEl = document.getElementById("start");
@@ -152,30 +152,29 @@ $(".drinkButton").on("click", function() {
 
     var drinkURL = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=" + DrinkUrlID;
 
-    //localStorage.setItem("drinkType", JSON.stringify(this.id));
-
-        //var drinkType = JSON.parse(localStorage.getItem("drinkType"));
+        // meal pairing
         var drinkType=this.id;
 
         if (drinkType==="butGin"){
-          //$("#pairings").text("Seafood & Vegetarian");
           $("#butBeef").attr("class","foodButton button is-success is-outlined");
           $("#butVegetarian").attr("class","foodButton button is-success is-outlined");
         }
         if(drinkType==="butVodka"){
-            //$("#pairings").text("Pork & Beef");
             $("#butPork").attr("class","foodButton button is-success is-outlined");
             $("#butBeef").attr("class","foodButton button is-success is-outlined");
         }
+        if(drinkType==="butScotch"){
+          $("#butVegetarian").attr("class","foodButton button is-success is-outlined");
+          $("#butBeef").attr("class","foodButton button is-success is-outlined");
+      }
         if (drinkType==="butTequila"){
-            //$("#pairings").text("Seafood, Pork, Beef & Vegetarian");
             $("#butSeadfood").attr("class","foodButton button is-success is-outlined");
             $("#butBeef").attr("class","foodButton button is-success is-outlined");
             $("#butPork").attr("class","foodButton button is-success is-outlined");
             $("#butVegetarian").attr("class","foodButton button is-success is-outlined");
+            $("#butVegan").attr("class","foodButton button is-success is-outlined");
         }
         if (drinkType==="butRum"){
-            //$("#pairings").text("Beef, Chicken, Vegetarian, Seafood & Pork")
             $("#butSeadfood").attr("class","foodButton button is-success is-outlined");
             $("#butBeef").attr("class","foodButton button is-success is-outlined");
             $("#butPork").attr("class","foodButton button is-success is-outlined");
@@ -183,16 +182,15 @@ $(".drinkButton").on("click", function() {
             $("#butChicken").attr("class","foodButton button is-success is-outlined");
         }
         if (drinkType==="butBourbon"){
-            //$("#pairings").text("Steak, Pork & Pasta");
             $("#butSteak").attr("class","foodButton button is-success is-outlined");
             $("#butPork").attr("class","foodButton button is-success is-outlined");
             $("#butPasta").attr("class","foodButton button is-success is-outlined");
         }
         if(drinkType==="butNon-alcoholic"){
-            //$("#pairings").text("The world is your oyster!");
             $("#butSeadfood").attr("class","foodButton button is-success is-outlined");
             $("#butSteak").attr("class","foodButton button is-success is-outlined");
             $("#butVegetarian").attr("class","foodButton button is-success is-outlined");
+            $("#butVegan").attr("class","foodButton button is-success is-outlined");
         }
 
         $("#sugg").text("Based on your drink selection, our meal recommendation is in green.");
@@ -246,32 +244,25 @@ $(".foodButton").on("click", function() {
     var mealType=this.id;
 
     if (mealType==="butBeef"){
-      //$("#pairings").text("Seafood & Vegetarian");
       $("#butAction").attr("class","foodButton button is-success is-outlined");
     }
     if (mealType==="butChicken"){
-        //$("#pairings").text("Pork & Beef");
         $("#butComedy").attr("class","foodButton button is-success is-outlined");
     }
     if (mealType==="butPork"){
-        //$("#pairings").text("Seafood, Pork, Beef & Vegetarian");
         $("#butHorror").attr("class","foodButton button is-success is-outlined");
     }
     if (mealType==="butSeadfood"){
-        //$("#pairings").text("Beef, Chicken, Vegetarian, Seafood & Pork")
         $("#butScifi").attr("class","foodButton button is-success is-outlined");
     }
     if (mealType==="butPasta"){
-        //$("#pairings").text("Steak, Pork & Pasta");
         $("#butDrama").attr("class","foodButton button is-success is-outlined");
     }
     if(mealType==="butVegetarian"){
-        //$("#pairings").text("The world is your oyster!");
         $("#butRomance").attr("class","foodButton button is-success is-outlined");
     }
 
     if(mealType==="butVegan"){
-      //$("#pairings").text("The world is your oyster!");
       $("#butAdventure").attr("class","foodButton button is-success is-outlined");
   }
 
